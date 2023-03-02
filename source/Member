@@ -1,0 +1,11 @@
+create table Member(
+id varchar(30) not null,
+password varchar(30) not null,
+question varchar(100),
+ansquestion varchar(100),
+name varchar(10),
+address varchar(100),
+hometel int,
+tel int,
+email varchar(100)
+);

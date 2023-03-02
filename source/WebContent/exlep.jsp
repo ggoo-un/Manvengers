@@ -1,0 +1,770 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE hztml>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+     <script>
+function over(obj) {
+    obj.src = "image/title4.png"
+}
+
+function out(obj) {
+    obj.src = "image/title3.png"
+}
+
+</script>
+   <link rel="stylesheet" type="text/css" href="menubar.css" />
+    <style>
+        /* 수정 */
+        
+        @import url(https://fonts.googleapis.com/css?family=Raleway);
+        body {
+            margin: 0px;
+        }
+        
+        nav {
+            margin-top: 40px;
+            padding: 24px;
+            text-align: center;
+            font-family: Raleway;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+        }
+        
+        #nav-1 {
+            background: #5175C0;
+            margin-top: 0px;
+        }
+        
+        .link-1 {
+            transition: 0.3s ease;
+            background: #5175C0;
+            color: #ffffff;
+            font-size: 17px;
+            text-decoration: none;
+            border-top: 4px solid #5175C0;
+            border-bottom: 4px solid #5175C0;
+            padding: 20px 0;
+            margin: 0 20px;
+        }
+        
+        .link-1:hover {
+            border-top: 4px solid #ffffff;
+            border-bottom: 4px solid #ffffff;
+            padding: 6px 0;
+        }
+        /* 메뉴 수정 끝 */
+        
+        #menubar a:hover {
+            color: #4a89dc;
+            font-weight: bold;
+        }
+        
+        #menubar_2 a:hover {
+            font-weight: bold;
+        }
+        
+        #menubar_2 a {
+            color: white
+        }
+        
+        .manu,
+        .manu_2 {
+            top: 0;
+            width: 100%;
+            min-width: 650px;
+            height: 39px;
+            position: fixed;
+            z-index: 999;
+            background: rgba(239, 239, 239, 0.95);
+            font-size: 0.7em;
+            border: 1px solid #d4d3d3;
+        }
+        
+        #up:hover {
+            position: relative;
+            bottom: 3px;
+            right: 3px;
+            color: #333;
+            font-weight: bold;
+        }
+        
+        .ul1 {
+            padding-left: 0px;
+            margin-bottom: 11px;
+        }
+        
+        .ul2 {
+            margin-top: 4px;
+        }
+        
+        hr {
+            background: #d4d3d3;
+            border: none;
+            height: 1px;
+            width: 100%
+        }
+        
+        a {
+            text-decoration: none;
+            color: #333;
+            padding: 0 10px;
+        }
+        
+        .notice_2 li {
+            color: #777;
+            list-style: none;
+            font-size: 0.8em;
+            height: 24px;
+        }
+        
+        .table1,
+        .t2 {
+            text-align: center;
+            width: 1224px;
+            margin-top: 20px;
+            background: #efe9dd;
+            padding-top: 30px;
+            border: 1px solid #d4d3d3;
+        }
+        
+        .t2 {
+            border: none;
+            height: 100px;
+            margin-top: 9px;
+        }
+        
+        .li_1 {
+            padding: 0 40px;
+            display: inline-block;
+            width: 80px;
+            margin: 0 2px;
+            line-height: 30px;
+            cursor: pointer;
+            text-align: center;
+            text-transform: capitalize;
+            font-size: 13px;
+        }
+        
+        a,
+        li {
+            font: 12px "Microsoft YaHei";
+        }
+        
+        #p1 {
+            font: 16px "Microsoft YaHei";
+            color: #7b1818;
+            letter-spacing: 3px;
+            margin-bottom: 24px;
+        }
+        
+        #p2 {
+            font: 12px "맑은 고딕";
+            color: #666;
+            line-height: 19px;
+            margin: 0;
+            font-weight: bold;
+        }
+        
+        h2,
+        h3 {
+            font: 15px "맑은 고딕";
+            color: #666;
+            margin: 8px 0;
+        }
+        
+        .notice {
+            color: #333;
+            border: 1px solid #aaa;
+            border-bottom: none;
+            /*rgba(239, 239, 239, 0.95) */
+            font-size: 12px;
+            width: 48px;
+            padding: 5px 10px;
+        }
+        
+        .button {
+            border-style: solid;
+            border-width: 1px;
+            background-color: buttonface;
+            border-radius: 3px;
+            padding: 2px 10px 2px 10px;
+        }
+        
+        #search {
+            font: 11px "맑은 고딕";
+            background: none;
+            border: none;
+            width: 137px;
+        }
+        
+        .img2 {
+            width: 281px;
+        }
+        
+        #imgnew {
+            width: 330px;
+        }
+        
+        #newtd {
+            width: 25%;
+            font: 13px "맑은 고딕";
+            padding-bottom: 24px;
+        }
+        
+        #div1 {
+            margin-top: 13px;
+        }
+        
+        .weekly {
+            background: #efe9dd;
+            margin: 0 auto;
+            height: 498px;
+            width: 1300px;
+            margin-bottom: 50px;
+        }
+        
+        .circle {
+            display: inline-block;
+            width: 9px;
+            height: 9px;
+            border-radius: 50%;
+            margin: 10px 0;
+        }
+        
+        #img1 {
+            width: 1300px;
+            overflow: hidden;
+        }
+        
+        #hr1 {
+            margin: 0;
+        }
+        
+        #a2 {
+            padding: 0px;
+        }
+        
+        .text {
+            color: white;
+            font: 17px "맑은 고딕";
+            display: none;
+            width: 1300px;
+            height: 208px;
+            padding: 209px 0 0 0;
+            margin: 0 auto;
+            margin-top: 694px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.45);
+            text-align: center;
+        }
+        
+        .top {
+            position: fixed;
+            left: 95%;
+            top: 62%;
+            bottom: 15px;
+            z-index: 999;
+            display: none;
+        }
+        
+        #aaa a {
+            padding: 0 80px;
+        }
+        
+        .titleArea strong {
+            display: inline-block;
+            margin: 0 auto;
+            margin-top: 60px;
+            margin-bottom: 30px;
+            padding: 8px 5px;
+            color: #353535;
+            font-size: 14px "맑은 고딕";
+            letter-spacing: 2px;
+            border-bottom: 2px #ddd solid;
+            text-transform: uppercase;
+        }
+        
+        .item {
+            color: white;
+            font: 12px 'Microsoft YaHei';
+            letter-spacing: 1px;
+            font-weight: bold;
+            padding: 7px 0;
+            width: 100%;
+        }
+        
+        .page_change li {
+            display: inline;
+        }
+        
+        .page_change a {
+            padding: 0 9px;
+            font-size: 12px "맑은 고딕";
+        }
+        
+        .box h3 {
+            text-align: center;
+            position: relative;
+            top: 80px;
+        }
+        
+        .box {
+            width: 80%;
+            height: 200px;
+            background: #F4E9B4;
+            margin: 40px auto;
+        }
+        
+        .box span {
+            FONT-SIZE: 16px;
+            color: white
+        }
+        
+        .box1,
+        .box2,
+        .box3 {
+            width: 330px;
+            height: 330px;
+            background: #F4E9B4;
+            margin: 40px auto;
+        }
+        
+        .card-1 {
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+            transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+        }
+        
+        .card-1:hover {
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+        }
+    </style>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title>체형별 안내</title>
+</head>
+
+<body style="margin:0;">
+    <!-- 메뉴 -->
+    <nav id="nav-1">
+        <a class="link-1" href="login.html">로그인 </a>
+        <a class="link-1" href="join.html">회원가입 </a>
+        <a class="link-1" href="cart.html">장바구니 </a>
+        <a class="link-1" href="outer.html">주문조회 </a>
+    </nav>
+    <!-- 제목 -->
+    <div align="center" style="padding: 50px 0 7px 0;height: 180px;">
+        <a href="main.html"><img src="image/title3.png" width="300px" onmouseover="over(this)" onmouseout="out(this)"></a>
+    </div>
+    <!-- 메뉴2 -->
+
+    <div id="nav" style="margin: -131px 0 244px 82px;">
+        <ul class="nav-menu clearfix unstyled">
+            <li><a href="main.html" class="three-d">
+                            Home
+                            <span class="three-d-box"><span class="front">Home</span><span class="back">Home</span></span>
+                        </a></li>
+            <li><a href="top.html" class="three-d">
+                            패션
+                            <span class="three-d-box"><span class="front">패션</span><span class="back">패션</span></span>
+                        </a>
+                <ul class="clearfix unstyled drop-menu">
+                    <li><a href="top.html" class="three-d">
+                                            TOP
+                                            <span class="three-d-box"><span class="front">TOP</span><span class="back">TOP</span></span>
+                                        </a></li>
+                    <li><a href="outer.html" class="three-d">
+                                                OUTER
+                                                <span class="three-d-box"><span class="front">OUTER</span><span class="back">OUTER</span></span>
+                                            </a></li>
+                    <li><a href="bottom.html" class="three-d">
+                                            BOTTOM
+                                            <span class="three-d-box"><span class="front">BOTTOM</span><span class="back">BOTTOM</span></span>
+                                        </a></li>
+                    <li><a href="shoe.html" class="three-d">
+                                            SHOE & BAG
+                                            <span class="three-d-box"><span class="front">SHOE & BAG</span><span class="back">SHOE & BAG</span></span>
+                                        </a></li>
+                    <li><a href="acc.html" class="three-d">
+                                                ACC
+                                                <span class="three-d-box"><span class="front">ACC</span><span class="back">ACC</span></span>
+                                            </a></li>
+                    <li><a href="exfashion.html" class="three-d">
+                                                체형별 코디
+                                                <span class="three-d-box"><span class="front">체형별 코디</span><span class="back">체형별 코디</span></span>
+                                            </a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="skin.html" class="three-d">
+                            화장품
+                            <span class="three-d-box"><span class="front">화장품</span><span class="back">화장품</span></span>
+                        </a>
+                <ul class="clearfix unstyled drop-menu">
+                    <li><a href="skin.html" class="three-d">
+                                                건성 피부
+                                                <span class="three-d-box"><span class="front">건성 피부</span><span class="back">건성 피부</span></span>
+                                            </a></li>
+                    <li><a href="skin.html" class="three-d">
+                                                    지성 피부
+                                                    <span class="three-d-box"><span class="front">지성 피부</span><span class="back">지성 피부</span></span>
+                                                </a></li>
+                    <li><a href="skin.html" class="three-d">
+                                                복합성 피부
+                                                <span class="three-d-box"><span class="front">복합성 피부</span><span class="back">복합성 피부</span></span>
+                                            </a></li>
+                    <li><a href="skin.html" class="three-d">
+                                                민감성 피부
+                                                <span class="three-d-box"><span class="front">민감성 피부</span><span class="back">민감성 피부</span></span>
+                                            </a></li>
+                    <li><a href="exskin.html" class="three-d">
+                                                피부 타입별 관리
+                                                <span class="three-d-box"><span class="front">피부 타입별 관리</span><span class="back">피부 타입별 관리</span></span>
+                                            </a></li>
+                </ul>
+            </li>
+            <li><a href="lep.html" class="three-d">
+                            헬스케어
+                            <span class="three-d-box"><span class="front">헬스케어</span><span class="back">헬스케어</span></span>
+                        </a>
+                <ul class="clearfix unstyled drop-menu">
+                    <li><a href="lep.html" class="three-d">
+                                                마른 체형
+                                                <span class="three-d-box"><span class="front">마른 체형</span><span class="back">마른 체형</span></span>
+                                            </a></li>
+                    <li><a href="lep.html" class="three-d">
+                                                    평균 체형
+                                                    <span class="three-d-box"><span class="front">평균 체형</span><span class="back">평균 체형</span></span>
+                                                </a></li>
+                    <li><a href="lep.html" class="three-d">
+                                                    살찐 체형
+                                                    <span class="three-d-box"><span class="front">살찐 체형</span><span class="back">살찐 체형</span></span>
+                                                </a></li>
+                    <li><a href="exlep.html" class="three-d">
+                                                    체형별 운동법
+                                                    <span class="three-d-box"><span class="front">체형별 운동법</span><span class="back">체형별 운동법</span></span>
+                                                </a></li>
+                </ul>
+            </li>
+            <li><a href="com.html" class="three-d">
+                            전자기기
+                            <span class="three-d-box"><span class="front">전자기기</span><span class="back">전자기기</span></span>
+                        </a>
+                <ul class="clearfix unstyled drop-menu">
+                    <li><a href="com.html" class="three-d">
+                                                    컴퓨터
+                                                    <span class="three-d-box"><span class="front">컴퓨터</span><span class="back">컴퓨터</span></span>
+                                                </a></li>
+                    <li><a href="com.html" class="three-d">
+                                                        카메라
+                                                        <span class="three-d-box"><span class="front">카메라</span><span class="back">카메라</span></span>
+                                                    </a></li>
+                    <li><a href="com.html" class="three-d">
+                                                    휴대폰
+                                                    <span class="three-d-box"><span class="front">휴대폰</span><span class="back">휴대폰</span></span>
+                                                </a></li>
+                    <li><a href="com.html" class="three-d">
+                                                    게임기
+                                                    <span class="three-d-box"><span class="front">게임기</span><span class="back">게임기</span></span>
+                                                </a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="game.html" class="three-d">
+                            게임
+                            <span class="three-d-box"><span class="front">게임</span><span class="back">게임</span></span>
+                        </a>
+                <ul class="clearfix unstyled drop-menu">
+                    <li><a href="game.html" class="three-d">
+                                    FPS
+                                        <span class="three-d-box"><span class="front">FPS</span><span class="back">FPS</span></span>
+                                    </a></li>
+                    <li><a href="game.html" class="three-d">
+                                    RPG
+                                        <span class="three-d-box"><span class="front">RPG</span><span class="back">RPG</span></span>
+                                    </a></li>
+                    <li><a href="game.html" class="three-d">
+                                        AOS
+                                        <span class="three-d-box"><span class="front">AOS</span><span class="back">AOS</span></span>
+                                    </a></li>
+                </ul>
+            </li>
+
+            <li><a href="review.html" class="three-d active">
+                            리뷰 상품
+                            <span class="three-d-box"><span class="front">리뷰 상품</span><span class="back">리뷰 상품</span></span>
+                        </a></li>
+        </ul>
+    </div>
+    <div align="center" class="titleArea" style="margin:0 auto;padding-bottom: 55px;border-bottom: 1px solid #d4d3d3;">
+        <strong>체형별 운동법</strong>
+    </div>
+    <div id="instructions">
+        <p><span>​</span></p>
+        <!-- } SE-TEXT -->
+        <!-- SE-TEXT { -->
+        <p><span>​</span></p>
+        <!-- } SE-TEXT -->
+        <p><span>​</span></p>
+        <!-- } SE-TEXT -->
+        <!-- SE-TEXT { -->
+        <p><span>​</span></p>
+        <!-- } SE-TEXT -->
+        <div align="center">
+            <div class="box card-1" style="height: 330px; width: 330px"><img src="image/lep_1.png" id="imgnew"></div>
+
+
+            <div>
+                <!-- SE-TEXT { -->
+                <h2 style=" font-size: 20px; margin-top: 50px"><span>마른 체형</span></h2>
+                <p><span>​</span></p>
+            </div>
+            <div align="center" class="box card-1" style="height: 167px;width: 530px; padding-top: 9px;margin-bottom: 54px;background: #3498DB">
+
+                <p class="바탕글">
+
+                    <span style="FONT-FAMILY: 바탕"><span style="FONT-SIZE: 16px;color: white"><span style="FONT-FAMILY: Gulim">가슴과 어깨가 좁고, 전체적으로 길쭉길쭉한 외소한 체형을 말한다.<br>
+                        </span></span>
+                    </span><span style="FONT-FAMILY: 바탕"><span style="FONT-SIZE: 16px;color: white"><span style="FONT-FAMILY: Gulim"><br>
+                        마른 체형인 사람들은 체중을 늘리기가 힘들며 <p><span></span></p><span>식이요법과 무산소 운동을 병행하여 체중과 근육을 같이 증가시켜야 한다.
+                <p><span></span></p>
+                <span>체력과 지구력이 부족해 근육이 천천히 증가함으로 지속적인 노력이 필요하다.</span>
+                </span>
+                </span><span style="FONT-FAMILY: 바탕"><span style="FONT-SIZE: 16px;color: white"><span style="FONT-FAMILY: Gulim"></span></span>
+                </span>
+                </p>
+            </div>
+            <div align="center" class="box card-1" style="height: 225px;padding-top: 9px;margin-bottom: 54px;background:   #3498DB">
+                <p><span style="color: wheat;font-size:23px;">운동 포인트</span></p>
+
+                <span lang="EN-US" style="mso-fareast-font-family: 바탕"><span style="FONT-SIZE: 11pt"><span style="FONT-FAMILY: Gulim">1. 고 중량 저 반복 운동을 실시한다.<br><p><span></span></p>
+                </span>
+                </span>
+                </span><span lang="EN-US" style="mso-fareast-font-family: 바탕"><span style="FONT-SIZE: 11pt"><span style="FONT-FAMILY: Gulim">2. 무거운 중량을 사용한 3대운동(스쿼트, 데드리프트, 벤치프레스)에 집중한다.<br><p><span></span></p>
+                </span>
+                </span>
+                </span><span lang="EN-US" style="mso-fareast-font-family: 바탕"><span style="FONT-SIZE: 11pt"><span style="FONT-FAMILY: Gulim">3. 고 중량 운동인 만큼 세트 사이사이에 충분한 휴식을 취한다.<br><p><span></span></p>
+                </span>
+                </span>
+                </span><span lang="EN-US" style="mso-fareast-font-family: 바탕"><span style="FONT-SIZE: 11pt"><span style="FONT-FAMILY: Gulim">4. 유산소 운동은 20분을 넘지 않게 한다. </span></span>
+                <p><span></span></p>
+                </span>
+                </span>
+            </div>
+            <div align="center" class="box card-1" style="height: 370px;padding-top: 9px;margin-bottom: 54px;background:   #3498DB">
+                <p><span style="color: wheat;font-size:23px;">식사법</span></p>
+                <span lang="EN-US" style="mso-fareast-font-family: 바탕"><span style="FONT-SIZE: 11pt"><span style="FONT-FAMILY: Gulim">1. 식사를 잘하고 적당한 보충제 섭취가 필수.<br><p><span></span></p>
+                <p><span>(식사를 충분히 하지 않은 상태에서의 스포츠 보충제 섭취는 그리 큰 효과를 주지 않는다.)</span></p>
+                <p><span>순수단백질 식품을 다양하게 적당량 섭취.</span></p>
+                </span>
+                </span>
+                </span><span lang="EN-US" style="mso-fareast-font-family: 바탕"><span style="FONT-SIZE: 11pt"><span style="FONT-FAMILY: Gulim">2. 매일 두시간 반 혹은 세시간 마다 5-7끼니의 소식.<br><p><span></span></p>
+
+                </span>
+                </span>
+                </span><span lang="EN-US" style="mso-fareast-font-family: 바탕"><span style="FONT-SIZE: 11pt"><span style="FONT-FAMILY: Gulim">3. 체중 1kg 당 1일 단백질 섭취량을 1-1.5g으로 늘림. <br><p><span></span></p>
+                <p><span>(근육을 잘 자라게 하기 위해서는 필수적인 영양 섭취법 중의 하나다.)</span> </p>
+                <p><span>5. 취침하기 90분 전에 단백질 식품이나 단백질 보충제를 마신다. </span> </p>
+                <p><span>6. 단당류(설탕 종류)의 섭취 제한 </span> </p>
+                </span>
+                </span>
+                </span>
+            </div>
+        </div>
+        <div align="center">
+            <div class="box card-1" style="height: 330px; width: 330px"><img src="image/lep_2.png" id="imgnew"></div>
+
+
+            <div>
+                <!-- SE-TEXT { -->
+                <h2 style=" font-size: 20px; margin-top: 50px"><span>평균 체형</span></h2>
+                <p><span>​</span></p>
+            </div>
+            <div align="center" class="box card-1" style="height: 167px;width: 530px; padding-top: 9px;margin-bottom: 54px;background:   #80D99D">
+
+                <p class="바탕글">
+
+                    <span style="FONT-FAMILY: 바탕"><span style="FONT-SIZE: 16px;color: white"><span style="FONT-FAMILY: Gulim">힘이 좋으며 몸통이 길고 크며 근육구조가 단단한 근육형 체형을 말한다.<br>
+                            </span></span>
+                    </span><span style="FONT-FAMILY: 바탕"><span style="FONT-SIZE: 16px;color: white"><span style="FONT-FAMILY: Gulim"><br>
+                        평균 체형인 사람들은 근육을 키우기가 매우 좋은 체형이다.  <p><span></span></p><span>다른 체형에 비하여 근육의 발달이 빠른 편 이므로 상하, 좌우 
+                    <p><span></span></p>
+                <span>근육의 비례를 맞추는데 집중하는 것이 좋다.</span>
+                </span>
+                </span><span style="FONT-FAMILY: 바탕"><span style="FONT-SIZE: 16px;color: white"><span style="FONT-FAMILY: Gulim"></span></span>
+                </span>
+                </p>
+            </div>
+            <div align="center" class="box card-1" style="height: 183px;padding-top: 9px;margin-bottom: 54px;background:#80D99D">
+                <p><span style="color: wheat;font-size:23px;">운동 포인트</span></p>
+
+                <span lang="EN-US" style="mso-fareast-font-family: 바탕"><span style="FONT-SIZE: 11pt"><span style="FONT-FAMILY: Gulim">1. 기본적인 근육증가 운동프로그램과 함께 세부적인 운동을 실시한다.<br><p><span></span></p>
+                </span>
+                </span>
+                </span><span lang="EN-US" style="mso-fareast-font-family: 바탕"><span style="FONT-SIZE: 11pt"><span style="FONT-FAMILY: Gulim">2. 근육이 잘 발달하기 때문에 자칫 오버트레이닝을 할 수 있으니 해당 근육에 운동 후 48시간 정도의 휴식기간을 갖는다.<br><p><span></span></p>
+                </span>
+                </span>
+                </span><span lang="EN-US" style="mso-fareast-font-family: 바탕"><span style="FONT-SIZE: 11pt"><span style="FONT-FAMILY: Gulim">3. 2개월에 한번씩 운동 루틴의 변화를 준다.<br><p><span></span></p>
+                </span>
+                </span>
+
+            </div>
+            <div align="center" class="box card-1" style="height: 250px;padding-top: 9px;margin-bottom: 54px;background:   #80D99D">
+                <p><span style="color: wheat;font-size:23px;">식사법</span></p>
+                <span lang="EN-US" style="mso-fareast-font-family: 바탕"><span style="FONT-SIZE: 11pt"><span style="FONT-FAMILY: Gulim">1. 체중 1kg에 최소한 1g의 단백질 섭취.<br><p><span></span></p>
+                </span>
+                </span>
+                </span><span lang="EN-US" style="mso-fareast-font-family: 바탕"><span style="FONT-SIZE: 11pt"><span style="FONT-FAMILY: Gulim">2. 탄수화물 섭취는 적당히 높게.<br><p><span></span></p>
+                </span>
+                </span>
+                </span><span lang="EN-US" style="mso-fareast-font-family: 바탕"><span style="FONT-SIZE: 11pt"><span style="FONT-FAMILY: Gulim">3. 지방섭취 제한.<br><p><span></span></p>
+                </span>
+                </span>
+                <p><span>4. 껍질 벗긴 닭고기, 계란 흰자, 쇠고기 살코기, 생선</span></p>
+
+                </span>
+            </div>
+        </div>
+        <div align="center">
+            <div class="box card-1" style="height: 330px; width: 330px"><img src="image/lep_3.png" id="imgnew"></div>
+
+
+            <div>
+                <!-- SE-TEXT { -->
+                <h2 style=" font-size: 20px; margin-top: 50px"><span>살찐 체형</span></h2>
+                <p><span>​</span></p>
+            </div>
+            <div align="center" class="box card-1" style="height: 167px;width: 530px; padding-top: 9px;margin-bottom: 54px;background:   #E74C3C">
+
+                <p class="바탕글">
+
+                    <span style="FONT-FAMILY: 바탕"><span style="FONT-SIZE: 16px;color: white"><span style="FONT-FAMILY: Gulim">근육이 약하고, 얼굴이 둥글며, 목이 짧고, 엉덩이가 넓은 지방형 체형을 말한다.<br>
+                            </span></span>
+                    </span><span style="FONT-FAMILY: 바탕"><span style="FONT-SIZE: 16px;color: white"><span style="FONT-FAMILY: Gulim"><br>
+                        살찐 체형은 사람들은 근육을 증가에는 크게 문제가 되지 않으나  <p><span></span></p><span>지방량을 줄이기가 쉽지 않다. 다이어트에 성공을 한다 해도 
+                    <p><span></span></p>
+                <span>예전의 몸으로 돌아가지 않게 식습관 개선에 신경을 많이 써야 할 것이다.</span>
+                </span>
+                </span><span style="FONT-FAMILY: 바탕"><span style="FONT-SIZE: 16px;color: white"><span style="FONT-FAMILY: Gulim"></span></span>
+                </span>
+                </p>
+            </div>
+            <div align="center" class="box card-1" style="height: 217px;padding-top: 9px;margin-bottom: 54px;background:#E74C3C">
+                <p><span style="color: wheat;font-size:23px;">운동 포인트</span></p>
+
+                <span lang="EN-US" style="mso-fareast-font-family: 바탕"><span style="FONT-SIZE: 11pt"><span style="FONT-FAMILY: Gulim">1. 저 중량, 고반복식 운동으로 훈련 중 소비하는 칼로리를 높인다.<br><p><span></span></p>
+                </span>
+                </span>
+                </span><span lang="EN-US" style="mso-fareast-font-family: 바탕"><span style="FONT-SIZE: 11pt"><span style="FONT-FAMILY: Gulim">2. 근력운동 후 유산소성 운동을 40분씩 한다.<br><p><span></span></p>
+                </span>
+                </span>
+                </span><span lang="EN-US" style="mso-fareast-font-family: 바탕"><span style="FONT-SIZE: 11pt"><span style="FONT-FAMILY: Gulim">3. 고도 비만일 경우 관절에 무리 가지 않는 자전거, 수영등의 유산소를 선택한다.<br><p><span></span></p>
+                </span>
+                </span>
+                <p><span>4. 운동 중 휴식시간은 30초로 한다.</span></p>
+
+            </div>
+            <div align="center" class="box card-1" style="height: 370px;padding-top: 9px;margin-bottom: 54px;background:   #E74C3C">
+                <p><span style="color: wheat;font-size:23px;">식사법</span></p>
+                <span lang="EN-US" style="mso-fareast-font-family: 바탕"><span style="FONT-SIZE: 11pt"><span style="FONT-FAMILY: Gulim">1. 지방섭취 최저유지 (섭취비율 10%를 넘지 않도록 주의한다.)<br><p><span></span></p>
+                <p><span>무지방인 유제품 섭취. (우유가 들어간 제품 중에 되도록 지방을 없앤 제품을 먹도록 한다.)</span></p>
+                <p><span>순수단백질 식품을 다양하게 적당량 섭취.</span></p>
+                </span>
+                </span>
+                </span><span lang="EN-US" style="mso-fareast-font-family: 바탕"><span style="FONT-SIZE: 11pt"><span style="FONT-FAMILY: Gulim">2. 심야의 간식 안됨<br><p><span></span></p>
+                <p><span>참을 수 없으면 유익한 저지방 식품으로.</span> </p>
+                </span>
+                </span>
+                </span><span lang="EN-US" style="mso-fareast-font-family: 바탕"><span style="FONT-SIZE: 11pt"><span style="FONT-FAMILY: Gulim">3. 소량의 잦은 식사<br><p><span></span></p>
+                <p><span>혈당치 유지, 신진대사 촉진, 식욕억제. </span> </p>
+                <p><span>(굶으면 그만큼 다음 식사에 칼로리를 더욱 축적하려는 경향이 있으므로 절대 거르지 않고, 자주 조금씩 먹는다.)</span> </p>
+                </span>
+                </span>
+                </span>
+            </div>
+        </div>
+
+
+
+
+        <style>
+            #instructions {
+                max-width: 1300px;
+                text-align: left;
+                margin: 30px auto;
+            }
+            
+            #instructions textarea {
+                width: 100%;
+                height: 100px;
+            }
+            
+            .video-js .vjs-control-bar {
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+            }
+        </style>
+    </div>
+    <div align="center" style="background-color: rgba(239, 239, 239, 0.95);border: 1px solid #d4d3d3;height: 367px; min-width: 1300px;">
+        <table style="width: 1300px;padding-top: 35px" border="0">
+            <tr>
+                <td style="padding:0 30px; width: 433px;">
+                    <h2 style="letter-spacing: 2px;">고객지원센터</h2>
+                    <h3 style="font-size: 24px;  margin-bottom: 13px;">1234-5678</h3>
+                    <hr style="width:20px;height: 2px;float: left;background: black; margin:0;"><br><br>
+                    <h2>계좌안내</h2>
+                    <p id="p2">입금계좌</p>
+                    <p id="p2">한림은행 666 - 777 - 888888</p>
+                    <p id="p2">예금주: 한림대학교</p>
+                    <p id="p2">------------------------------------------</p>
+                    <p id="p2">교환/반품전용 택배비계좌</p>
+                    <p id="p2">한림은행 444444 - 55 - 66666</p>
+                    <p id="p2">예금주: 한림대학교</p>
+                </td>
+                <td style="width: 433px;">
+                    <div style="height:276px;padding:13px">
+                        <h2 style="letter-spacing: 2px;">화사정보</h2>
+                        <p id="p2">화사 : 데일리 </p>
+                        <p id="p2">대표 : 정군</p>
+                        <p id="p2">사업자번호 : [0000-33-00000]</p>
+                        <p id="p2">메일 : gooni0906@gmail.com</p>
+                        <p id="p2">주소 : 한림대학길1 한림대학교 학생생활관</p>
+                        <br>
+                        <hr style="width:20px;height: 2px;float: left;background: black; margin:0;"><br>
+                        <h2 style="letter-spacing: 2px;">배송/반품지원센터</h2>
+                        <a href="https://www.cjlogistics.com/ko/main" class="button">대한통운 택배</a>
+                    </div>
+                </td>
+                <td style="padding:0 30px;border-left:1px solid #d4d3d3;">
+                    <div style="height:268px;width: 360px; margin: 0 auto;">
+                        <div style="border-bottom: 1px solid #aaa;">
+                            <div class="notice">공지사항</div>
+                        </div>
+                        <div>
+                            <ul class="notice_2" style="padding:0;margin-top: 9px;">
+                                <li><a href="notice.html" style="margin: 0; padding:0; color:#777">· 추석연휴 휴무 안내</li>
+                                    <li><a href="notice.html" style="margin: 0; padding:0; color:#777">· 입고 자연 안내</li>
+                                    <li><a href="notice.html" style="margin: 0; padding:0; color:#777">· 8.15 휴무 안내</li>
+                                    <li><a href="notice.html" style="margin: 0; padding:0; color:#777">· 세일 안내</li>
+                                    <li><a href="notice.html" style="margin: 0; padding:0; color:#777">· 8월 여름 휴가안내</li>
+                                    <li><a href="notice.html" style="margin: 0; padding:0; color:#777">· 교환,반품 방법</li>
+                            </ul>
+                        </div>
+                    </div>
+                </td>
+
+            </tr>
+
+        </table>
+    </div>
+
+</body>
+
+</html>
+>

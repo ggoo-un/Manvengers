@@ -1,0 +1,1484 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <script>
+function over(obj) {
+    obj.src = "image/title4.png"
+}
+
+function out(obj) {
+    obj.src = "image/title3.png"
+}
+
+</script>
+    <link rel="stylesheet" type="text/css" href="menubar.css" />
+    <style>
+        /* 수정 */
+        
+        @import url(https://fonts.googleapis.com/css?family=Raleway);
+        body {
+            margin: 0px;
+        }
+        
+        nav {
+            margin-top: 40px;
+            padding: 24px;
+            text-align: center;
+            font-family: Raleway;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+        }
+        
+        #nav-1 {
+            background: #5175C0;
+            margin-top: 0px;
+        }
+        
+        .link-1 {
+            transition: 0.3s ease;
+            background: #5175C0;
+            color: #ffffff;
+            font-size: 17px;
+            text-decoration: none;
+            border-top: 4px solid #5175C0;
+            border-bottom: 4px solid #5175C0;
+            padding: 20px 0;
+            margin: 0 20px;
+        }
+        
+        .link-1:hover {
+            border-top: 4px solid #ffffff;
+            border-bottom: 4px solid #ffffff;
+            padding: 6px 0;
+        }
+        /* 메뉴 수정 끝 */
+        
+        #menubar a:hover {
+            color: #4a89dc;
+            font-weight: bold;
+        }
+        
+        #menubar_2 a:hover {
+            font-weight: bold;
+        }
+        
+        #menubar_2 a {
+            color: white
+        }
+        
+        .manu,
+        .manu_2 {
+            top: 0;
+            width: 100%;
+            min-width: 650px;
+            height: 39px;
+            position: fixed;
+            z-index: 999;
+            background: rgba(239, 239, 239, 0.95);
+            font-size: 0.7em;
+            border: 1px solid #d4d3d3;
+        }
+        
+        #up:hover {
+            position: relative;
+            bottom: 3px;
+            right: 3px;
+            color: #333;
+            font-weight: bold;
+        }
+        
+        .ul1 {
+            padding-left: 0px;
+            margin-bottom: 11px;
+        }
+        
+        .ul2 {
+            margin-top: 4px;
+        }
+        
+        hr {
+            background: #d4d3d3;
+            border: none;
+            height: 1px;
+            width: 100%
+        }
+        
+        a {
+            text-decoration: none;
+            color: #333;
+            padding: 0 10px;
+        }
+        
+        .notice_2 li {
+            color: #777;
+            list-style: none;
+            font-size: 0.8em;
+            height: 24px;
+        }
+        
+        .table1,
+        .t2 {
+            text-align: center;
+            width: 1224px;
+            margin-top: 20px;
+            background: #efe9dd;
+            padding-top: 30px;
+            border: 1px solid #d4d3d3;
+        }
+        
+        .t2 {
+            border: none;
+            height: 100px;
+            margin-top: 9px;
+        }
+        
+        .li_1 {
+            padding: 0 40px;
+            display: inline-block;
+            width: 80px;
+            margin: 0 2px;
+            line-height: 30px;
+            cursor: pointer;
+            text-align: center;
+            text-transform: capitalize;
+            font-size: 13px;
+        }
+        
+        a,
+        li {
+            font: 12px "Microsoft YaHei";
+        }
+        
+        #p1 {
+            font: 16px "Microsoft YaHei";
+            color: #7b1818;
+            letter-spacing: 3px;
+            margin-bottom: 24px;
+        }
+        
+        #p2 {
+            font: 12px "맑은 고딕";
+            color: #666;
+            line-height: 19px;
+            margin: 0;
+            font-weight: bold;
+        }
+        
+        h2,
+        h3 {
+            font: 15px "맑은 고딕";
+            color: #666;
+            margin: 8px 0;
+        }
+        
+        .notice {
+            color: #333;
+            border: 1px solid #aaa;
+            border-bottom: none;
+            /*rgba(239, 239, 239, 0.95) */
+            font-size: 12px;
+            width: 48px;
+            padding: 5px 10px;
+        }
+        
+        .button {
+            border-style: solid;
+            border-width: 1px;
+            background-color: buttonface;
+            border-radius: 3px;
+            padding: 2px 10px 2px 10px;
+        }
+        
+        #search {
+            font: 11px "맑은 고딕";
+            background: none;
+            border: none;
+            width: 137px;
+        }
+        
+        .img2 {
+            width: 281px;
+        }
+        
+        #imgnew {
+            margin-top: 10px;
+            width: 310px;
+        }
+        
+        #newtd {
+            width: 25%;
+            font: 13px "맑은 고딕";
+            padding-bottom: 24px;
+        }
+        
+        #div1 {
+            margin-top: 13px;
+        }
+        
+        .weekly {
+            background: #efe9dd;
+            margin: 0 auto;
+            height: 498px;
+            width: 1300px;
+            margin-bottom: 50px;
+        }
+        
+        .circle {
+            display: inline-block;
+            width: 9px;
+            height: 9px;
+            border-radius: 50%;
+            margin: 10px 0;
+        }
+        
+        #img1 {
+            width: 1300px;
+            overflow: hidden;
+        }
+        
+        #hr1 {
+            margin: 0;
+        }
+        
+        #a2 {
+            padding: 0px;
+        }
+        
+        .text {
+            color: white;
+            font: 17px "맑은 고딕";
+            display: none;
+            width: 1300px;
+            height: 208px;
+            padding: 209px 0 0 0;
+            margin: 0 auto;
+            margin-top: 694px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.45);
+            text-align: center;
+        }
+        
+        .top {
+            position: fixed;
+            left: 95%;
+            top: 62%;
+            bottom: 15px;
+            z-index: 999;
+            display: none;
+        }
+        
+        #aaa a {
+            padding: 0 80px;
+        }
+        
+        .titleArea strong {
+            display: inline-block;
+            margin: 0 auto;
+            margin-top: 60px;
+            margin-bottom: 30px;
+            padding: 8px 5px;
+            color: #353535;
+            font-size: 14px "맑은 고딕";
+            letter-spacing: 2px;
+            border-bottom: 2px #ddd solid;
+            text-transform: uppercase;
+        }
+        
+        .item {
+            color: white;
+            font: 12px 'Microsoft YaHei';
+            letter-spacing: 1px;
+            font-weight: bold;
+            padding: 7px 0;
+            width: 100%;
+        }
+        
+        .page_change li {
+            display: inline;
+        }
+        
+        .page_change a {
+            padding: 0 9px;
+            font-size: 12px "맑은 고딕";
+        }
+        
+        .box h3 {
+            text-align: center;
+            position: relative;
+            top: 80px;
+        }
+        
+        .box {
+            width: 80%;
+            height: 200px;
+            background: #F4E9B4;
+            margin: 40px auto;
+        }
+        
+        .box2 {
+            width: 330px;
+            height: 330px;
+            background: #F4E9B4;
+            margin: 40px auto;
+        }
+        
+        .card-1 {
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+            transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+        }
+        
+        .card-1:hover {
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+        }
+    </style>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title>마녀공장 퓨어 클렌징오일</title>
+</head>
+
+<body style="margin:0;">
+    <!-- 메뉴 -->
+    <nav id="nav-1">
+        <a class="link-1" href="login.html">로그인 </a>
+        <a class="link-1" href="join.html">회원가입 </a>
+        <a class="link-1" href="cart.html">장바구니 </a>
+        <a class="link-1" href="outer.html">주문조회 </a>
+    </nav>
+    <!-- 제목 -->
+    <div align="center" style="padding: 50px 0 7px 0;height: 180px;">
+        <a href="main.jsp"><img src="image/title3.png" width="300px" onmouseover="over(this)" onmouseout="out(this)"></a>
+    </div>
+    <!-- 메뉴2 -->
+
+    <div id="nav" style="margin: -131px 0 244px 82px;">
+        <ul class="nav-menu clearfix unstyled">
+            <li><a href="main.jsp" class="three-d">
+                            Home
+                            <span class="three-d-box"><span class="front">Home</span><span class="back">Home</span></span>
+                        </a></li>
+            <li><a href="top.html" class="three-d">
+                            패션
+                            <span class="three-d-box"><span class="front">패션</span><span class="back">패션</span></span>
+                        </a>
+                <ul class="clearfix unstyled drop-menu">
+                    <li><a href="top.html" class="three-d">
+                                            TOP
+                                            <span class="three-d-box"><span class="front">TOP</span><span class="back">TOP</span></span>
+                                        </a></li>
+                    <li><a href="outer.html" class="three-d">
+                                                OUTER
+                                                <span class="three-d-box"><span class="front">OUTER</span><span class="back">OUTER</span></span>
+                                            </a></li>
+                    <li><a href="bottom.html" class="three-d">
+                                            BOTTOM
+                                            <span class="three-d-box"><span class="front">BOTTOM</span><span class="back">BOTTOM</span></span>
+                                        </a></li>
+                    <li><a href="shoe.html" class="three-d">
+                                            SHOE & BAG
+                                            <span class="three-d-box"><span class="front">SHOE & BAG</span><span class="back">SHOE & BAG</span></span>
+                                        </a></li>
+                    <li><a href="acc.html" class="three-d">
+                                                ACC
+                                                <span class="three-d-box"><span class="front">ACC</span><span class="back">ACC</span></span>
+                                            </a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="skin.html" class="three-d">
+                            화장품
+                            <span class="three-d-box"><span class="front">화장품</span><span class="back">화장품</span></span>
+                        </a>
+                <ul class="clearfix unstyled drop-menu">
+                    <li><a href="skin.html" class="three-d">
+                                                건성 피부
+                                                <span class="three-d-box"><span class="front">건성 피부</span><span class="back">건성 피부</span></span>
+                                            </a></li>
+                    <li><a href="skin.html" class="three-d">
+                                                    지성 피부
+                                                    <span class="three-d-box"><span class="front">지성 피부</span><span class="back">지성 피부</span></span>
+                                                </a></li>
+                    <li><a href="skin.html" class="three-d">
+                                                복합성 피부
+                                                <span class="three-d-box"><span class="front">복합성 피부</span><span class="back">복합성 피부</span></span>
+                                            </a></li>
+                    <li><a href="skin.html" class="three-d">
+                                                민감성 피부
+                                                <span class="three-d-box"><span class="front">민감성 피부</span><span class="back">민감성 피부</span></span>
+                                            </a></li>
+                    <li><a href="skin.html" class="three-d">
+                                                피부 타입별 안내
+                                                <span class="three-d-box"><span class="front">피부 타입별 안내</span><span class="back">피부 타입별 안내</span></span>
+                                            </a></li>
+                </ul>
+            </li>
+            <li><a href="lep.html" class="three-d">
+                            헬스케어
+                            <span class="three-d-box"><span class="front">헬스케어</span><span class="back">헬스케어</span></span>
+                        </a>
+                <ul class="clearfix unstyled drop-menu">
+                    <li><a href="lep.html" class="three-d">
+                                                마른 체형
+                                                <span class="three-d-box"><span class="front">마른 체형</span><span class="back">마른 체형</span></span>
+                                            </a></li>
+                    <li><a href="lep.html" class="three-d">
+                                                    평균 체형
+                                                    <span class="three-d-box"><span class="front">평균 체형</span><span class="back">평균 체형</span></span>
+                                                </a></li>
+                    <li><a href="lep.html" class="three-d">
+                                                    살찐 체형
+                                                    <span class="three-d-box"><span class="front">살찐 체형</span><span class="back">살찐 체형</span></span>
+                                                </a></li>
+                    <li><a href="skin.html" class="three-d">
+                                                    체형별 안내
+                                                    <span class="three-d-box"><span class="front">피부 타입별 안내</span><span class="back">피부 타입별 안내</span></span>
+                                                </a></li>
+                </ul>
+            </li>
+            <li><a href="com.html" class="three-d">
+                            전자기기
+                            <span class="three-d-box"><span class="front">전자기기</span><span class="back">전자기기</span></span>
+                        </a>
+                <ul class="clearfix unstyled drop-menu">
+                    <li><a href="com.html" class="three-d">
+                                                    컴퓨터
+                                                    <span class="three-d-box"><span class="front">컴퓨터</span><span class="back">컴퓨터</span></span>
+                                                </a></li>
+                    <li><a href="com.html" class="three-d">
+                                                        카메라
+                                                        <span class="three-d-box"><span class="front">카메라</span><span class="back">카메라</span></span>
+                                                    </a></li>
+                    <li><a href="com.html" class="three-d">
+                                                    휴대폰
+                                                    <span class="three-d-box"><span class="front">휴대폰</span><span class="back">휴대폰</span></span>
+                                                </a></li>
+                    <li><a href="com.html" class="three-d">
+                                                    게임기
+                                                    <span class="three-d-box"><span class="front">게임기</span><span class="back">게임기</span></span>
+                                                </a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="game.html" class="three-d">
+                            게임
+                            <span class="three-d-box"><span class="front">게임</span><span class="back">게임</span></span>
+                        </a>
+                <ul class="clearfix unstyled drop-menu">
+                    <li><a href="game.html" class="three-d">
+                                    FPS
+                                        <span class="three-d-box"><span class="front">FPS</span><span class="back">FPS</span></span>
+                                    </a></li>
+                    <li><a href="game.html" class="three-d">
+                                    RPG
+                                        <span class="three-d-box"><span class="front">RPG</span><span class="back">RPG</span></span>
+                                    </a></li>
+                    <li><a href="game.html" class="three-d">
+                                        AOS
+                                        <span class="three-d-box"><span class="front">AOS</span><span class="back">AOS</span></span>
+                                    </a></li>
+                </ul>
+            </li>
+
+            <li><a href="review.html" class="three-d active">
+                            리뷰 상품
+                            <span class="three-d-box"><span class="front">리뷰 상품</span><span class="back">리뷰 상품</span></span>
+                        </a></li>
+        </ul>
+    </div>
+    <div id="instructions">
+        <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-059e84b0-1654-11ea-b526-4719a50f39a0"><span style="" class="se-fs- se-ff-   " id="SE-0cb89adc-1654-11ea-b526-c55f9c2e01f5">​</span></p>
+        <!-- } SE-TEXT -->
+        <!-- SE-TEXT { -->
+        <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-059e84b1-1654-11ea-b526-1d7d0349fad3"><span style="" class="se-fs- se-ff-   " id="SE-0cb8c1ed-1654-11ea-b526-11014b0e7485">​</span></p>
+        <!-- } SE-TEXT -->
+        <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-059e84b0-1654-11ea-b526-4719a50f39a0"><span style="" class="se-fs- se-ff-   " id="SE-0cb89adc-1654-11ea-b526-c55f9c2e01f5">​</span></p>
+        <!-- } SE-TEXT -->
+        <!-- SE-TEXT { -->
+        <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-059e84b1-1654-11ea-b526-1d7d0349fad3"><span style="" class="se-fs- se-ff-   " id="SE-0cb8c1ed-1654-11ea-b526-11014b0e7485">​</span></p>
+        <!-- } SE-TEXT -->
+        <div align="center"><img src="image/review_1.jpg" id="imgnew">
+
+
+            <div class="se-module se-module-text se-quote">
+                <!-- SE-TEXT { -->
+                <h2 class="se-text-paragraph se-text-paragraph-align- " style=" font-size: 20px; margin-top: 50px" id="SE-bf3c453a-28b1-4190-ab21-bf5e12b2905a"><span style="" class="se-fs- se-ff-   " id="SE-0cb7fe91-1654-11ea-b526-79cd8282ad8f">마녀공장 퓨어 클렌징오일</span></h2>
+                <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-059e84b0-1654-11ea-b526-4719a50f39a0"><span style="" class="se-fs- se-ff-   " id="SE-0cb89adc-1654-11ea-b526-c55f9c2e01f5">​</span></p>
+                <!-- } SE-TEXT -->
+                <!-- SE-TEXT { -->
+                <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-059e84b1-1654-11ea-b526-1d7d0349fad3"><span style="" class="se-fs- se-ff-   " id="SE-0cb8c1ed-1654-11ea-b526-11014b0e7485">​</span></p>
+                <!-- } SE-TEXT -->
+                <!-- } SE-TEXT -->
+            </div>
+            <div align="center">
+
+                <video id="my_video_1" class="video-js vjs-default-skin" width="640px" height="267px" controls preload="none" poster='http://video-js.zencoder.com/oceans-clip.jpg' data-setup='{ "aspectRatio":"640:267", "playbackRates": [1, 1.5, 2] }'>
+                        <source src="https://serviceapi.nmv.naver.com/flash/convertIframeTag.nhn?vid=B527567A4EA668021703F15581CBB79474EF&outKey=V1283039b9d04a96b57a7c1d6c394021c541fcb290b894487964dc1d6c394021c541f" type='video/mp4' />
+                    </video></div>
+            <div class="box card-1" style="height: 236px;padding-top: 9px;">
+                <div class="se-component se-text se-l-default" id="SE-75146d3d-7b6c-4f0e-9deb-d82d6ac61969">
+                    <div class="se-component-content">
+                        <div class="se-section se-section-text se-l-default">
+                            <div class="se-module se-module-text">
+                                <!-- SE-TEXT { -->
+                                <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-059e84aa-1654-11ea-b526-af4aca256a86"><span style="" class="se-fs- se-ff-   " id="SE-0cb825a2-1654-11ea-b526-5706770b2a2b">제 피부고민은 항상 트러블이었지 블랙헤드라던지 화이트헤드는 별로 생각해본적이 없었는데</span></p>
+                                <!-- } SE-TEXT -->
+                                <!-- SE-TEXT { -->
+                                <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-059e84ab-1654-11ea-b526-ad15ab339794"><span style="" class="se-fs- se-ff-   " id="SE-0cb84cb3-1654-11ea-b526-b585e959baf6">요새들어 건조해지면서 피부가 많이 예민해져서 그런지 눈에 거슬리기 시작하더라구요~</span></p>
+                                <!-- } SE-TEXT -->
+                                <!-- SE-TEXT { -->
+                                <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-059e84ac-1654-11ea-b526-b38be66d4ceb"><span style="" class="se-fs- se-ff-   " id="SE-0cb84cb4-1654-11ea-b526-039fc540a36e">이런 경우는 무엇보다 꼼꼼한 클렌징이 중요하다고 하는데 </span></p>
+                                <!-- } SE-TEXT -->
+                                <!-- SE-TEXT { -->
+                                <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-059e84ad-1654-11ea-b526-a7ce10ac6c80"><span style="" class="se-fs- se-ff-   " id="SE-0cb84cb5-1654-11ea-b526-65dd9e191fc5">마침</span><span style="" class="se-fs-fs19 se-ff-   " id="SE-0cb873c6-1654-11ea-b526-1f794a572ae9"><i><b> '마녀공장 퓨어 클렌징오일'</b></i></span>
+                                    <span style="" class="se-fs- se-ff-   " id="SE-0cb873c7-1654-11ea-b526-bd62cfadc427">이 좋다고 하길래 사용해보게 되었어요^^</span>
+                                </p>
+                                <!-- } SE-TEXT -->
+                                <!-- SE-TEXT { -->
+                                <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-059e84ae-1654-11ea-b526-a122c0bb0159"><span style="" class="se-fs- se-ff-   " id="SE-0cb873c8-1654-11ea-b526-ad66ef30c060">저번에 클렌징폼으로 만나 이미 맘에 들었던 제품이라 별 고민없 선택하게 되었는데</span></p>
+                                <!-- } SE-TEXT -->
+                                <!-- SE-TEXT { -->
+                                <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-059e84af-1654-11ea-b526-8b3e595a1e14"><span style="" class="se-fs- se-ff-   " id="SE-0cb89ad9-1654-11ea-b526-1737b7c202f5">알고보니 여러 </span><span style="" class="se-fs- se-ff-   " id="SE-0cb89ada-1654-11ea-b526-c5facd9552df"><u><i>뷰티부문에서 1위</i></u></span>
+                                    <span style="" class="se-fs- se-ff-   " id="SE-0cb89adb-1654-11ea-b526-7d4e9f2ed394">를 할만큼 아주 입소문난 제품더라구요+_+</span>
+                                </p>
+                                <!-- } SE-TEXT -->
+                                <!-- SE-TEXT { -->
+                                <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-059e84b0-1654-11ea-b526-4719a50f39a0"><span style="" class="se-fs- se-ff-   " id="SE-0cb89adc-1654-11ea-b526-c55f9c2e01f5">​</span></p>
+                                <!-- } SE-TEXT -->
+                                <!-- SE-TEXT { -->
+                                <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-059e84b1-1654-11ea-b526-1d7d0349fad3"><span style="" class="se-fs- se-ff-   " id="SE-0cb8c1ed-1654-11ea-b526-11014b0e7485">​</span></p>
+                                <!-- } SE-TEXT -->
+                                <!-- SE-TEXT { -->
+                                <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-0a4cdab7-a699-441c-baf6-caef22a0d4c9"><span style="" class="se-fs- se-ff-   " id="SE-0cb8c1ee-1654-11ea-b526-db1941ade695">​</span></p>
+                                <!-- } SE-TEXT -->
+                                <!-- SE-TEXT { -->
+                                <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-0cb8c1f0-1654-11ea-b526-0707384b703c"><span style="" class="se-fs- se-ff-   " id="SE-0cb8c1ef-1654-11ea-b526-5b02f9de8345">​</span></p>
+                                <!-- } SE-TEXT -->
+                                <!-- SE-TEXT { -->
+                                <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-0cb8e902-1654-11ea-b526-21910353eaed"><span style="" class="se-fs- se-ff-   " id="SE-0cb8e901-1654-11ea-b526-1328302847aa">​</span></p>
+                                <!-- } SE-TEXT -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="se-component se-image se-l-default" id="SE-da648ca0-7538-403d-b87e-bd8866e21bc8">
+                <div class="se-component-content se-component-content-extend">
+                    <div class="se-section se-section-image se-l-default se-section-align-center">
+
+                        <a href="#" class="se-module se-module-image __se_image_link __se_link" style=" " onclick="return false;" data-linktype="img" data-linkdata="{&quot;id&quot; : &quot;SE-da648ca0-7538-403d-b87e-bd8866e21bc8&quot;, &quot;src&quot; : &quot;https://postfiles.pstatic.net/MjAxOTEyMDNfMjE1/MDAxNTc1MzY1NDY5NDQ3.2DNgegjXONkTDHntdpwkhvHlCukkjskONUV3WlLXLjMg.6O8mSLD9HhMsGG2X_Rvx_mOkVitKX5ZobijaLCOn8Xwg.JPEG.jjuni6428/SE-74196d3d-f444-42b6-b575-45bab26b8a5a.jpg&quot;, &quot;linkUse&quot; : &quot;false&quot;, &quot;link&quot; : &quot;&quot;}">
+                            <img src="https://postfiles.pstatic.net/MjAxOTEyMDNfMjE1/MDAxNTc1MzY1NDY5NDQ3.2DNgegjXONkTDHntdpwkhvHlCukkjskONUV3WlLXLjMg.6O8mSLD9HhMsGG2X_Rvx_mOkVitKX5ZobijaLCOn8Xwg.JPEG.jjuni6428/SE-74196d3d-f444-42b6-b575-45bab26b8a5a.jpg?type=w966" data-lazy-src=""
+                                data-width="886" data-height="664" alt="" class="se-image-resource">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="se-component se-quotation se-l-quotation_postit" id="SE-79110f3a-6b23-4fde-88d4-b31b8454755c">
+                <div class="se-component-content">
+                    <div class="se-section se-section-quotation se-l-quotation_postit">
+                        <blockquote class="se-quotation-container">
+                            <div class="se-module se-module-text se-quote">
+                                <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-059e84b0-1654-11ea-b526-4719a50f39a0"><span style="" class="se-fs- se-ff-   " id="SE-0cb89adc-1654-11ea-b526-c55f9c2e01f5">​</span></p>
+                                <!-- } SE-TEXT -->
+                                <!-- SE-TEXT { -->
+                                <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-059e84b1-1654-11ea-b526-1d7d0349fad3"><span style="" class="se-fs- se-ff-   " id="SE-0cb8c1ed-1654-11ea-b526-11014b0e7485">​</span></p>
+                                <!-- } SE-TEXT -->
+                                <!-- SE-TEXT { -->
+                                <p class="se-text-paragraph se-text-paragraph-align- " style="" id="SE-05a31894-1654-11ea-b526-27df942ad084"><span style="" class="se-fs- se-ff-   " id="SE-0cb9fa73-1654-11ea-b526-0d85fce55f0d"><b>마녀공장 퓨어 클렌징 오일</b></span></p>
+                                <!-- } SE-TEXT -->
+                                <!-- SE-TEXT { -->
+                                <p class="se-text-paragraph se-text-paragraph-align- " style="" id="SE-19df8153-6452-4ab9-8670-0d1ab2cd21d5"><span style="" class="se-fs-fs16 se-ff-   " id="SE-0cb9fa74-1654-11ea-b526-235804bab07b"><b>/ 200ml</b></span></p>
+                                <!-- } SE-TEXT -->
+                            </div>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+            <div class="se-component se-text se-l-default" id="SE-aba4fad4-1cec-4b48-ae4c-97d3ccf67dcb">
+                <div class="se-component-content">
+                    <div class="se-section se-section-text se-l-default">
+                        <div class="se-module se-module-text">
+                            <!-- SE-TEXT { -->
+                            <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-0cba2186-1654-11ea-b526-19427467b2d7"><span style="" class="se-fs- se-ff-   " id="SE-0cba2185-1654-11ea-b526-3d347fd94b93">​</span></p>
+                            <!-- } SE-TEXT -->
+                            <!-- SE-TEXT { -->
+                            <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-0cba4898-1654-11ea-b526-17f8ae1cdb08"><span style="" class="se-fs- se-ff-   " id="SE-0cba4897-1654-11ea-b526-73a254c88295">​</span></p>
+                            <!-- } SE-TEXT -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="se-component se-image se-l-default" id="SE-e3a56434-1b39-4b47-ae5c-573dd2e41c95">
+                <div class="se-component-content se-component-content-extend">
+                    <div class="se-section se-section-image se-l-default se-section-align-center">
+
+                        <a href="#" class="se-module se-module-image __se_image_link __se_link" style=" " onclick="return false;" data-linktype="img" data-linkdata="{&quot;id&quot; : &quot;SE-e3a56434-1b39-4b47-ae5c-573dd2e41c95&quot;, &quot;src&quot; : &quot;https://postfiles.pstatic.net/MjAxOTEyMDNfNzgg/MDAxNTc1MzY1NDc3NTEy.odp_laTuk3pcxySIFrfV9QV9QeTm1k_7CJyFiEk0MGAg.vXVGrveTOOGdWRei4OE45ioSc6OMbtC1Z-IpQDaPlyQg.JPEG.jjuni6428/SE-41b1f97b-037d-4c84-bdeb-1b3983f9391f.jpg&quot;, &quot;linkUse&quot; : &quot;false&quot;, &quot;link&quot; : &quot;&quot;}">
+                            <img src="https://postfiles.pstatic.net/MjAxOTEyMDNfNzgg/MDAxNTc1MzY1NDc3NTEy.odp_laTuk3pcxySIFrfV9QV9QeTm1k_7CJyFiEk0MGAg.vXVGrveTOOGdWRei4OE45ioSc6OMbtC1Z-IpQDaPlyQg.JPEG.jjuni6428/SE-41b1f97b-037d-4c84-bdeb-1b3983f9391f.jpg?type=w966" data-lazy-src=""
+                                data-width="886" data-height="664" alt="" class="se-image-resource">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="box card-1" style="height: 346px;padding-top: 9px;margin-bottom: 54px;">
+                <div class="se-component se-quotation se-l-quotation_bubble" id="SE-414c93ad-0cf4-4040-9be0-c3c0de6d9e51">
+                    <div class="se-component-content">
+                        <div class="se-section se-section-quotation se-l-quotation_bubble">
+                            <blockquote class="se-quotation-container">
+                                <div class="se-module se-module-text se-quote">
+                                    <!-- SE-TEXT { -->
+                                    <p class="se-text-paragraph se-text-paragraph-align- " style="" id="SE-05a5d7b8-1654-11ea-b526-cdbb92a67e86"><span style="" class="se-fs- se-ff-   " id="SE-0cbb32f9-1654-11ea-b526-113e88757373">- 올리브영 1위 클렌징 오일</span></p>
+                                    <!-- } SE-TEXT -->
+                                    <!-- SE-TEXT { -->
+                                    <p class="se-text-paragraph se-text-paragraph-align- " style="" id="SE-05a5d7b9-1654-11ea-b526-995e1cff9066"><span style="" class="se-fs- se-ff-   " id="SE-0cbb32fa-1654-11ea-b526-a181ea812d04">-올리브영 온라인몰 베스트 전체1위</span></p>
+                                    <!-- } SE-TEXT -->
+                                    <!-- SE-TEXT { -->
+                                    <p class="se-text-paragraph se-text-paragraph-align- " style="" id="SE-05a5d7ba-1654-11ea-b526-8fb123857571"><span style="" class="se-fs- se-ff-   " id="SE-0cbb5a0b-1654-11ea-b526-c32f828db180">- 700만 화장품 정보 플랫폼 화해 수상</span></p>
+                                    <!-- } SE-TEXT -->
+                                    <!-- SE-TEXT { -->
+                                    <p class="se-text-paragraph se-text-paragraph-align- " style="" id="SE-05a5d7bb-1654-11ea-b526-05defb5a6447"><span style="" class="se-fs- se-ff-   " id="SE-0cbb5a0c-1654-11ea-b526-873afc05eff4">-파우더룸 뷰티어워드 1위</span></p>
+                                    <!-- } SE-TEXT -->
+                                    <!-- SE-TEXT { -->
+                                    <p class="se-text-paragraph se-text-paragraph-align- " style="" id="SE-114ce05b-6bd7-47de-a459-9afbc2480a04"><span style="" class="se-fs- se-ff-   " id="SE-0cbb5a0d-1654-11ea-b526-5f993a919cd7">- 언니의 파우치 1위 </span></p>
+                                    <!-- } SE-TEXT -->
+                                </div>
+                                <div class="se-module se-module-text">
+                                    <!-- SE-TEXT { -->
+                                    <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-05a64ced-1654-11ea-b526-d71113a099b9"><span style="" class="se-fs- se-ff-   " id="SE-0cbb811e-1654-11ea-b526-13e560e0b764">박스포장부터 화려한 수상경력이 돋보이는 마녀공장 퓨어 클렌징 오일!</span></p>
+                                    <!-- } SE-TEXT -->
+                                    <!-- SE-TEXT { -->
+                                    <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-05a64cee-1654-11ea-b526-27324699554b"><span style="" class="se-fs- se-ff-   " id="SE-0cbba82f-1654-11ea-b526-cdb242d3e175">일명 </span><span style="" class="se-fs- se-ff- se-weight-unset  " id="SE-0cbba830-1654-11ea-b526-837b87e40ecb"><i>'수상 줄 세우기'</i></span>
+                                        <span style="" class="se-fs- se-ff-   " id="SE-0cbba831-1654-11ea-b526-6541e83b6d97">라고 해서 </span><span style="" class="se-fs-fs19 se-ff-   se-decoration-unset" id="SE-0cbba832-1654-11ea-b526-1738cbe19e2e"><i><b>5관왕 1위</b></i></span>
+                                        <span style="" class="se-fs- se-ff-   " id="SE-0cbba833-1654-11ea-b526-117ccdbf1bce">에,</span>
+                                    </p>
+                                    <!-- } SE-TEXT -->
+                                    <!-- SE-TEXT { -->
+                                    <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-05a64cef-1654-11ea-b526-f3459b5cbb28"><span style="" class="se-fs- se-ff-   " id="SE-0cbbce44-1654-11ea-b526-a5bcbe5031a3">게다가 11월 29일 기준으로는 </span><span style="" class="se-fs- se-ff-   " id="SE-0cbbce45-1654-11ea-b526-515eae8d3f7b"><u><i>네이버 쇼핑 클렌징오일에서 1위 달성</i></u></span>
+                                        <span style="" class="se-fs- se-ff-   " id="SE-0cbbce46-1654-11ea-b526-f19e2cc3fd9f">하는 영광까지!</span>
+                                    </p>
+                                    <!-- } SE-TEXT -->
+                                    <!-- SE-TEXT { -->
+                                    <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-05a64cf0-1654-11ea-b526-7f440b413c4c"><span style="" class="se-fs- se-ff-   " id="SE-0cbbce47-1654-11ea-b526-dd7554da6a72">이 모든게 성분도 좋고 효과까지 확실하니까 가능한 일이겠지요?ㅎㅎㅎ</span></p>
+                                    <!-- } SE-TEXT -->
+                                    <!-- SE-TEXT { -->
+                                    <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-05a64cf1-1654-11ea-b526-c9571e64a5a1"><span style="" class="se-fs- se-ff-   " id="SE-0cbbf558-1654-11ea-b526-35a4f2a4bf59">​</span></p>
+                                    <!-- } SE-TEXT -->
+                                    <!-- SE-TEXT { -->
+                                    <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-05a64cf2-1654-11ea-b526-45267da365eb"><span style="" class="se-fs- se-ff-   " id="SE-0cbbf559-1654-11ea-b526-89e9687e65a9">​</span></p>
+                                    <!-- } SE-TEXT -->
+                                    <!-- SE-TEXT { -->
+                                    <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-9726c71e-afc4-4188-835b-2a13dc9d12fd"><span style="" class="se-fs- se-ff-   " id="SE-0cbbf55a-1654-11ea-b526-b95f6fad9868">​</span></p>
+                                    <!-- } SE-TEXT -->
+                                    <!-- SE-TEXT { -->
+                                    <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-0cbbf55c-1654-11ea-b526-11f7491c7615"><span style="" class="se-fs- se-ff-   " id="SE-0cbbf55b-1654-11ea-b526-ef1ad239417c">​</span></p>
+                                    <!-- } SE-TEXT -->
+                                    <!-- SE-TEXT { -->
+                                    <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-0cbc1c6e-1654-11ea-b526-e1461fa25349"><span style="" class="se-fs- se-ff-   " id="SE-0cbc1c6d-1654-11ea-b526-2b2f3a50e762">​</span></p>
+                                    <!-- } SE-TEXT -->
+                                </div>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="se-component se-image se-l-default" id="SE-0630a628-ad5d-40b2-8c53-68aeeecf8158">
+                <div class="se-component-content se-component-content-extend">
+                    <div class="se-section se-section-image se-l-default se-section-align-center">
+
+                        <a href="#" class="se-module se-module-image __se_image_link __se_link" style=" " onclick="return false;" data-linktype="img" data-linkdata="{&quot;id&quot; : &quot;SE-0630a628-ad5d-40b2-8c53-68aeeecf8158&quot;, &quot;src&quot; : &quot;https://postfiles.pstatic.net/MjAxOTEyMDNfNzMg/MDAxNTc1MzY1NDQwNTAw.mOeWkCkXB2VX-GRe2DtXkZekpLifPbeeAGQuShJUppYg.GQrBQmJ_IlEi5m5PmN-Vl_mG5Uo_Naplra1i285BaiQg.JPEG.jjuni6428/SE-d0ffbb41-163b-41e8-8c88-8cd64bf383b3.jpg&quot;, &quot;linkUse&quot; : &quot;false&quot;, &quot;link&quot; : &quot;&quot;}">
+                            <img src="https://postfiles.pstatic.net/MjAxOTEyMDNfNzMg/MDAxNTc1MzY1NDQwNTAw.mOeWkCkXB2VX-GRe2DtXkZekpLifPbeeAGQuShJUppYg.GQrBQmJ_IlEi5m5PmN-Vl_mG5Uo_Naplra1i285BaiQg.JPEG.jjuni6428/SE-d0ffbb41-163b-41e8-8c88-8cd64bf383b3.jpg?type=w966" data-lazy-src=""
+                                data-width="886" data-height="633" alt="" class="se-image-resource">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="box card-1" style="height: 346px;padding-top: 9px;margin-bottom: 54px;">
+                <div class="se-component se-quotation se-l-quotation_bubble" id="SE-cde579aa-d47f-41b6-b0e2-c54599e9b984">
+                    <div class="se-component-content">
+                        <div class="se-section se-section-quotation se-l-quotation_bubble">
+                            <blockquote class="se-quotation-container">
+                                <div class="se-module se-module-text se-quote">
+                                    <!-- SE-TEXT { -->
+                                    <p class="se-text-paragraph se-text-paragraph-align- " style="" id="SE-2cdb32dd-32c4-46f2-b5e9-d87fcc52da56"><span style="" class="se-fs- se-ff-   " id="SE-0cbd2ddf-1654-11ea-b526-334c37f91658">자연유래성분, 블랙헤드 개선, 미세먼지 제거 99%</span></p>
+                                    <!-- } SE-TEXT -->
+                                </div>
+                                <div class="se-module se-module-text">
+                                    <!-- SE-TEXT { -->
+                                    <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-05a95a36-1654-11ea-b526-118d1babb18f"><span style="" class="se-fs- se-ff-   " id="SE-0cbd54f0-1654-11ea-b526-1df3addddb81">오일과 폼의 장점을 두루두루 다 갖춘 마녀공장 퓨어클렌징오일!</span></p>
+                                    <!-- } SE-TEXT -->
+                                    <!-- SE-TEXT { -->
+                                    <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-05a95a37-1654-11ea-b526-c7e14e065583"><span style="" class="se-fs- se-ff-   " id="SE-0cbd54f1-1654-11ea-b526-172d50f3149c"><u><i>14가지 오일성분</i></u></span><span style="" class="se-fs- se-ff-   se-decoration-unset" id="SE-0cbd54f2-1654-11ea-b526-8f2f8e6f2f63"><i>과 </i></span>
+                                        <span style="" class="se-fs- se-ff-   " id="SE-0cbd7c03-1654-11ea-b526-ff7d7c812004"><u><i>비누풀잎추출물, 데실글루코사이드</i></u></span><span style="" class="se-fs- se-ff-   " id="SE-0cbd7c04-1654-11ea-b526-47de5e1f8054">가 함유된 </span></p>
+                                    <!-- } SE-TEXT -->
+                                    <!-- SE-TEXT { -->
+                                    <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-05a95a38-1654-11ea-b526-d391adf775f2"><span style="" class="se-fs-fs19 se-ff-   " id="SE-0cbd7c05-1654-11ea-b526-f7f8cb73259b"><i><b> 식물성 계면활성제</b></i></span><span style="" class="se-fs- se-ff-   " id="SE-0cbd7c06-1654-11ea-b526-833c80681846">가 구석구석 꼼꼼하고 깨끗히 세정해주고</span></p>
+                                    <!-- } SE-TEXT -->
+                                    <!-- SE-TEXT { -->
+                                    <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-05a95a39-1654-11ea-b526-4390692d2fbf"><span style="" class="se-fs- se-ff-   " id="SE-0cbda317-1654-11ea-b526-434e14d238db">눈시림이 없는 순한 성분으로로 </span><span style="" class="se-fs-fs19 se-ff-   " id="SE-0cbda318-1654-11ea-b526-d178fd1508e6"><i><b>민감피부</b></i></span>
+                                        <span style="" class="se-fs- se-ff-   " id="SE-0cbda319-1654-11ea-b526-cdee068a690d">도 안심하고 사용할 수 있답니다 </span>
+                                    </p>
+                                    <!-- } SE-TEXT -->
+                                    <!-- SE-TEXT { -->
+                                    <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-05a95a3a-1654-11ea-b526-239fb148761e"><span style="" class="se-fs- se-ff-   " id="SE-0cbda31a-1654-11ea-b526-31c98a969d60">그러면서</span><span style="" class="se-fs- se-ff-   se-decoration-unset" id="SE-0cbdca2b-1654-11ea-b526-f5dfda5dcc68"><i> </i></span>
+                                        <span style="" class="se-fs- se-ff-   " id="SE-0cbdca2c-1654-11ea-b526-856e56c40ed9"><u><i>미세먼지를 99.73% 제거</i></u></span><span style="" class="se-fs- se-ff-   " id="SE-0cbdca2d-1654-11ea-b526-071f4a5915ab">하는 </span>
+                                        <span style="" class="se-fs-fs19 se-ff-   " id="SE-0cbdca2e-1654-11ea-b526-d9438a000e3e"><i><b>강한 세정력</b></i></span>
+                                        <span style="" class="se-fs- se-ff-   " id="SE-0cbdf13f-1654-11ea-b526-89ef8b9ee915">까지!</span>
+                                    </p>
+                                    <!-- } SE-TEXT -->
+                                    <!-- SE-TEXT { -->
+                                    <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-05a95a3b-1654-11ea-b526-cbdb9bbd8e45"><span style="" class="se-fs- se-ff-   " id="SE-0cbdf140-1654-11ea-b526-1922c61415c1">​</span></p>
+                                    <!-- } SE-TEXT -->
+                                    <!-- SE-TEXT { -->
+                                    <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-05a95a3c-1654-11ea-b526-9d0dc2343781"><span style="" class="se-fs- se-ff-   " id="SE-0cbdf141-1654-11ea-b526-b7231254c5bf">이제 블랙헤드와 피지들~ 짜고 뜯고 하면서 악순환 하지 마시고 녹이세요~</span></p>
+                                    <!-- } SE-TEXT -->
+                                    <!-- SE-TEXT { -->
+                                    <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-05a9814d-1654-11ea-b526-5d516d305311"><span style="" class="se-fs- se-ff-   " id="SE-0cbe1852-1654-11ea-b526-89e3996d0931">피지와 유사한 구조의 </span><span style="" class="se-fs-fs19 se-ff-   " id="SE-0cbe1853-1654-11ea-b526-653fe7b46155"><i><b>호호바씨오일</b></i></span>
+                                        <span style="" class="se-fs- se-ff-   " id="SE-0cbe1854-1654-11ea-b526-7de3a53e8420">이 함유되어 있어 피지조절까지 되는 아주 똑똑한 제품입니다!</span>
+                                    </p>
+                                    <!-- } SE-TEXT -->
+                                    <!-- SE-TEXT { -->
+                                    <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-05a9814e-1654-11ea-b526-a558cf7c7c31"><span style="" class="se-fs- se-ff-   " id="SE-0cbe1855-1654-11ea-b526-29847db9509d">​</span></p>
+                                    <!-- } SE-TEXT -->
+                                    <!-- SE-TEXT { -->
+                                    <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-05a9814f-1654-11ea-b526-97debc9db62d"><span style="" class="se-fs- se-ff-   " id="SE-0cbe3f66-1654-11ea-b526-af44815f49f3">​</span></p>
+                                    <!-- } SE-TEXT -->
+                                    <!-- SE-TEXT { -->
+                                    <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-1cb30765-fb81-4220-872f-f1653cb27aec"><span style="" class="se-fs- se-ff-   " id="SE-0cbe3f67-1654-11ea-b526-f9d29b6d5293">​</span></p>
+                                    <!-- } SE-TEXT -->
+                                    <!-- SE-TEXT { -->
+                                    <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-0cbe3f69-1654-11ea-b526-970b89dab62b"><span style="" class="se-fs- se-ff-   " id="SE-0cbe3f68-1654-11ea-b526-cd841c2c12f9">​</span></p>
+                                    <!-- } SE-TEXT -->
+                                    <!-- SE-TEXT { -->
+                                    <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-0cbe667b-1654-11ea-b526-ad93f23ed523"><span style="" class="se-fs- se-ff-   " id="SE-0cbe667a-1654-11ea-b526-15e3f5bef6d2">​</span></p>
+                                    <!-- } SE-TEXT -->
+                                </div>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="se-component se-image se-l-default" id="SE-34c3bd8d-08ab-464e-9d7a-511d354618fe">
+                <div class="se-component-content se-component-content-extend">
+                    <div class="se-section se-section-image se-l-default se-section-align-center">
+
+                        <a href="#" class="se-module se-module-image __se_image_link __se_link" style=" " onclick="return false;" data-linktype="img" data-linkdata="{&quot;id&quot; : &quot;SE-34c3bd8d-08ab-464e-9d7a-511d354618fe&quot;, &quot;src&quot; : &quot;https://postfiles.pstatic.net/MjAxOTEyMDNfMzIg/MDAxNTc1MzY1NDQ3NjE2.c15i7ksbiSbYYw35-1dAqtUY4yX7jR_hQ6VoqU2Qk6kg.MRJy5Ce7VWVEH4r4QhWmDqFefBAofq30ZXKFqEtzycMg.JPEG.jjuni6428/SE-74a63582-4f2a-4c0a-8fcd-e8b5d12306c7.jpg&quot;, &quot;linkUse&quot; : &quot;false&quot;, &quot;link&quot; : &quot;&quot;}">
+                            <img src="https://postfiles.pstatic.net/MjAxOTEyMDNfMzIg/MDAxNTc1MzY1NDQ3NjE2.c15i7ksbiSbYYw35-1dAqtUY4yX7jR_hQ6VoqU2Qk6kg.MRJy5Ce7VWVEH4r4QhWmDqFefBAofq30ZXKFqEtzycMg.JPEG.jjuni6428/SE-74a63582-4f2a-4c0a-8fcd-e8b5d12306c7.jpg?type=w966" data-lazy-src=""
+                                data-width="886" data-height="664" alt="" class="se-image-resource">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="se-component se-text se-l-default" id="SE-7c6c21ff-c469-4f46-be67-11c48afb8b98">
+                <div class="se-component-content">
+                    <div class="se-section se-section-text se-l-default">
+                        <div class="se-module se-module-text">
+                            <!-- SE-TEXT { -->
+                            <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-05abcb44-1654-11ea-b526-47f786f7559e"><span style="" class="se-fs- se-ff-   " id="SE-0cbf9f00-1654-11ea-b526-0bc0c0c7a99f">​</span></p>
+                            <!-- } SE-TEXT -->
+                            <!-- SE-TEXT { -->
+                            <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-05abf255-1654-11ea-b526-a3b0dc4d43e4"><span style="" class="se-fs- se-ff-   " id="SE-0cbfc611-1654-11ea-b526-d71840d56544">​</span></p>
+                            <!-- } SE-TEXT -->
+                            <!-- SE-TEXT { -->
+                            <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-05abcb42-1654-11ea-b526-f9f410e13a18"><span style="" class="se-fs- se-ff-   " id="SE-0cbf77ec-1654-11ea-b526-ef4e9eaea81c">박스 개봉법이 좀 독특해요+_+</span></p>
+                            <!-- } SE-TEXT -->
+                            <!-- SE-TEXT { -->
+                            <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-05abcb43-1654-11ea-b526-ffd027a1d75f"><span style="" class="se-fs- se-ff-   " id="SE-0cbf9efd-1654-11ea-b526-032f832cfa9c">전에 써본 클렌징폼도 그렇고~ 아마 </span><span style="" class="se-fs-fs19 se-ff-   " id="SE-0cbf9efe-1654-11ea-b526-cb31140892e8"><i><b>마녀공장</b></i></span>
+                                <span style="" class="se-fs- se-ff-   " id="SE-0cbf9eff-1654-11ea-b526-db007eb601b0">만의 특징인듯^^</span>
+                            </p>
+
+
+                            <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-adaa331f-261d-4863-acbd-65c1776c3490"><span style="" class="se-fs- se-ff-   " id="SE-0cbfc612-1654-11ea-b526-619af7f22ad1">​</span></p>
+                            <!-- } SE-TEXT -->
+                            <!-- SE-TEXT { -->
+                            <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-0cbfc614-1654-11ea-b526-d5582088cccb"><span style="" class="se-fs- se-ff-   " id="SE-0cbfc613-1654-11ea-b526-c168852d8add">​</span></p>
+                            <!-- } SE-TEXT -->
+                            <!-- SE-TEXT { -->
+                            <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-0cbfed26-1654-11ea-b526-19b44c77b90e"><span style="" class="se-fs- se-ff-   " id="SE-0cbfc615-1654-11ea-b526-7f343d0cc9ce">​</span></p>
+                            <!-- } SE-TEXT -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="se-component se-imageStrip se-imageStrip2 se-l-default" id="SE-cba7122a-809f-46cb-b9ff-38c79a24cad7">
+                <div class="se-component-content se-component-content-extend">
+                    <div class="se-section se-section-imageStrip se-l-default">
+                        <div class="se-imageStrip-container se-imageStrip-col-2">
+                            <a href="#" class="se-module se-module-image __se_image_link __se_link" style=" width:50.0%;" onclick="return false;" data-linktype="img" data-linkdata="{&quot;id&quot; : &quot;SE-16708470-54be-4b6d-b8ad-f4c3bcf00086&quot;, &quot;src&quot; : &quot;https://postfiles.pstatic.net/MjAxOTEyMDNfNzAg/MDAxNTc1MzY1NDU0NzY5.jenjtI8WKq51ow6adFlYFVMV1m0bvdw3vuCuf4QmnSgg.2dYpVpqxss-tWRYu5aTogBwxgg4KgJoaeXBurXy3PCgg.JPEG.jjuni6428/SE-2f41054c-04f2-4efc-9098-f80e3e10878d.jpg&quot;, &quot;linkUse&quot; : &quot;false&quot;, &quot;link&quot; : &quot;&quot;}">
+                                <img width="500px" src="https://postfiles.pstatic.net/MjAxOTEyMDNfNzAg/MDAxNTc1MzY1NDU0NzY5.jenjtI8WKq51ow6adFlYFVMV1m0bvdw3vuCuf4QmnSgg.2dYpVpqxss-tWRYu5aTogBwxgg4KgJoaeXBurXy3PCgg.JPEG.jjuni6428/SE-2f41054c-04f2-4efc-9098-f80e3e10878d.jpg?type=w966"
+                                    data-lazy-src="" data-width="886" data-height="664" alt="" class="se-image-resource">
+                            </a>
+                            <a href="#" class="se-module se-module-image __se_image_link __se_link" style=" width:50.0%;" onclick="return false;" data-linktype="img" data-linkdata="{&quot;id&quot; : &quot;SE-288bf364-0f2e-4c19-9b2e-4e1c2a2e0c9f&quot;, &quot;src&quot; : &quot;https://postfiles.pstatic.net/MjAxOTEyMDNfMzMg/MDAxNTc1MzY1NDYxODY2.Ck9Mgc9FY4FUwyL3bLbZAKernvdEsNorH4QjEZdzOosg.rJhaHlrrtQ0gX1h8YelRIs4R_ujZtM_TAByxwTPApKog.JPEG.jjuni6428/SE-6464b607-4886-4dd0-a2cc-eb138f09ac0f.jpg&quot;, &quot;linkUse&quot; : &quot;false&quot;, &quot;link&quot; : &quot;&quot;}">
+                                <img width="500px" src="https://postfiles.pstatic.net/MjAxOTEyMDNfMzMg/MDAxNTc1MzY1NDYxODY2.Ck9Mgc9FY4FUwyL3bLbZAKernvdEsNorH4QjEZdzOosg.rJhaHlrrtQ0gX1h8YelRIs4R_ujZtM_TAByxwTPApKog.JPEG.jjuni6428/SE-6464b607-4886-4dd0-a2cc-eb138f09ac0f.jpg?type=w966"
+                                    data-lazy-src="" data-width="886" data-height="664" alt="" class="se-image-resource">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box card-1" style="height: 165px;padding-top: 9px;margin-bottom: 54px;">
+                <div class="se-component se-text se-l-default" id="SE-42d82093-31b9-4de6-be63-1ae1d3053bdf">
+                    <div class="se-component-content">
+                        <div class="se-section se-section-text se-l-default">
+                            <div class="se-module se-module-text">
+                                <!-- SE-TEXT { -->
+                                <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-05b1709a-1654-11ea-b526-97a23fef9003"><span style="" class="se-fs- se-ff-   " id="SE-0cc0fe97-1654-11ea-b526-455c981c562e">상자를 개봉하면 문구들이 눈에 띄는데</span></p>
+                                <!-- } SE-TEXT -->
+                                <!-- SE-TEXT { -->
+                                <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-05b1709b-1654-11ea-b526-f3c79c377dee"><span style="" class="se-fs- se-ff-   " id="SE-0cc125a8-1654-11ea-b526-3f37971a5e12">먼저, </span><span style="" class="se-fs-fs19 se-ff-   " id="SE-0cc125a9-1654-11ea-b526-3b33bb91ad8f"><i><b>개봉후 12개월내</b></i></span>
+                                    <span style="" class="se-fs- se-ff-   " id="SE-0cc125aa-1654-11ea-b526-453dc3c9829c">에 사용을 권장한다고 하네요~</span>
+                                </p>
+                                <!-- } SE-TEXT -->
+                                <!-- SE-TEXT { -->
+                                <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-05b1709c-1654-11ea-b526-e9cec411b7a3"><span style="" class="se-fs- se-ff-   " id="SE-0cc14cbb-1654-11ea-b526-136291fd50e8">피부에 부담을 줄 수 있는 </span><span style="" class="se-fs- se-ff-   " id="SE-0cc14cbc-1654-11ea-b526-75ad0af55cec"><u><i>자극적인 성분을 모두 뺐기 때문에</i></u></span></p>
+                                <!-- } SE-TEXT -->
+                                <!-- SE-TEXT { -->
+                                <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-05b1709d-1654-11ea-b526-0fd43dc41543"><span style="" class="se-fs- se-ff-   " id="SE-0cc14cbd-1654-11ea-b526-79e37de119b9"> 빠르게 사용하는게 좋다고 하더라구요^^</span></p>
+                                <!-- } SE-TEXT -->
+                                <!-- SE-TEXT { -->
+                                <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-05b1709e-1654-11ea-b526-4f07bf498d6c"><span style="" class="se-fs- se-ff-   " id="SE-0cc14cbe-1654-11ea-b526-cf4b46a492c9">​</span></p>
+                                <!-- } SE-TEXT -->
+                                <!-- SE-TEXT { -->
+                                <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-05b1709f-1654-11ea-b526-c775e3f77c84"><span style="" class="se-fs- se-ff-   " id="SE-0cc173cf-1654-11ea-b526-7d59c62011be">​</span></p>
+                                <!-- } SE-TEXT -->
+                                <!-- SE-TEXT { -->
+                                <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-718593ff-03fd-4945-a60c-f3e6201fac9f"><span style="" class="se-fs- se-ff-   " id="SE-0cc173d0-1654-11ea-b526-7f4c3646d49d">​</span></p>
+                                <!-- } SE-TEXT -->
+                                <!-- SE-TEXT { -->
+                                <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-0cc173d2-1654-11ea-b526-11d8980ea20d"><span style="" class="se-fs- se-ff-   " id="SE-0cc173d1-1654-11ea-b526-8b55331bd109">​</span></p>
+                                <!-- } SE-TEXT -->
+                                <!-- SE-TEXT { -->
+                                <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-0cc173d4-1654-11ea-b526-41e66f0c7679"><span style="" class="se-fs- se-ff-   " id="SE-0cc173d3-1654-11ea-b526-3774a4c83c99">​</span></p>
+                                <!-- } SE-TEXT -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="se-component se-image se-l-default" id="SE-955007d5-b747-4b8c-8d84-4f46e6f2ade9">
+                <div class="se-component-content se-component-content-extend">
+                    <div class="se-section se-section-image se-l-default se-section-align-center">
+
+                        <a href="#" class="se-module se-module-image __se_image_link __se_link" style=" " onclick="return false;" data-linktype="img" data-linkdata="{&quot;id&quot; : &quot;SE-955007d5-b747-4b8c-8d84-4f46e6f2ade9&quot;, &quot;src&quot; : &quot;https://postfiles.pstatic.net/MjAxOTEyMDNfMjkw/MDAxNTc1MzY1NTA4MDYy.JompQeAoVCM6O9AwZ4vqq_wllGjUhkSYFs8Cgysubd8g.UZ36UKLZSiRb8dxdaPdGlsDuOqjj6DGJJh9EdttXl0Eg.JPEG.jjuni6428/SE-7e0cd309-cb62-4856-8a81-b17d0cdccf97.jpg&quot;, &quot;linkUse&quot; : &quot;false&quot;, &quot;link&quot; : &quot;&quot;}">
+                            <img width="500px" src="https://postfiles.pstatic.net/MjAxOTEyMDNfMjkw/MDAxNTc1MzY1NTA4MDYy.JompQeAoVCM6O9AwZ4vqq_wllGjUhkSYFs8Cgysubd8g.UZ36UKLZSiRb8dxdaPdGlsDuOqjj6DGJJh9EdttXl0Eg.JPEG.jjuni6428/SE-7e0cd309-cb62-4856-8a81-b17d0cdccf97.jpg?type=w966"
+                                data-lazy-src="" data-width="886" data-height="664" alt="" class="se-image-resource">
+                        </a>
+
+                        <a href="#" class="se-module se-module-image __se_image_link __se_link" style=" " onclick="return false;" data-linktype="img" data-linkdata="{&quot;id&quot; : &quot;SE-8ff9d1da-4a5d-490a-b2bb-06668d7a6cc3&quot;, &quot;src&quot; : &quot;https://postfiles.pstatic.net/MjAxOTEyMDNfMjIy/MDAxNTc1MzY1NTE2MTI0.cURVcKQ2QfWzc6jFpIaM8H-9HJl9BdoEwPdvASjc-tcg.2fnhJv0FzAqj-wH8EJREMYKjC3555T2OnkpzM33KiCwg.JPEG.jjuni6428/SE-75965092-c43a-4c36-8956-5430aa04a49d.jpg&quot;, &quot;linkUse&quot; : &quot;false&quot;, &quot;link&quot; : &quot;&quot;}">
+                            <img width="500px" src="https://postfiles.pstatic.net/MjAxOTEyMDNfMjIy/MDAxNTc1MzY1NTE2MTI0.cURVcKQ2QfWzc6jFpIaM8H-9HJl9BdoEwPdvASjc-tcg.2fnhJv0FzAqj-wH8EJREMYKjC3555T2OnkpzM33KiCwg.JPEG.jjuni6428/SE-75965092-c43a-4c36-8956-5430aa04a49d.jpg?type=w966"
+                                data-lazy-src="" data-width="886" data-height="664" alt="" class="se-image-resource">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="se-component se-text se-l-default" id="SE-a2f8e780-a2d9-4e1c-b09a-17882013944d">
+                <div class="se-component-content">
+                    <div class="se-section se-section-text se-l-default">
+                        <div class="se-module se-module-text">
+                            <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-05b5b665-1654-11ea-b526-71b50c31d423"><span style="" class="se-fs- se-ff-   " id="SE-0cc396b7-1654-11ea-b526-7f67c331e4a3">​</span></p>
+                            <!-- } SE-TEXT -->
+                            <!-- SE-TEXT { -->
+                            <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-c36280bd-1965-4ace-bb5c-e3de382dda38"><span style="" class="se-fs- se-ff-   " id="SE-0cc396b8-1654-11ea-b526-6bd51bdc6399">​</span></p>
+                            <!-- } SE-TEXT -->
+                            <!-- SE-TEXT { -->
+                            <!-- SE-TEXT { -->
+                            <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-05b5b663-1654-11ea-b526-5774c3cb516a"><span style="" class="se-fs- se-ff-   " id="SE-0cc36fa5-1654-11ea-b526-d1ed5d8ce0fa">용기는 노란색에 살짝 연한 주황빛이 도는 느낌!</span></p>
+                            <!-- } SE-TEXT -->
+                            <!-- SE-TEXT { -->
+                            <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-05b5b664-1654-11ea-b526-574cf00056e1"><span style="" class="se-fs- se-ff-   " id="SE-0cc36fa6-1654-11ea-b526-19faa1f85109">​</span></p>
+                            <!-- } SE-TEXT -->
+                            <!-- SE-TEXT { -->
+
+                            <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-0cc396ba-1654-11ea-b526-511bc61bcd5d"><span style="" class="se-fs- se-ff-   " id="SE-0cc396b9-1654-11ea-b526-f79c0b9c1715">​</span></p>
+                            <!-- } SE-TEXT -->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="se-component se-image se-l-default" id="SE-176fc520-258e-46d7-8ceb-9a7ac1a7e099">
+                <div class="se-component-content se-component-content-extend">
+                    <div class="se-section se-section-image se-l-default se-section-align-center">
+
+                        <a href="#" class="se-module se-module-image __se_image_link __se_link" style=" " onclick="return false;" data-linktype="img" data-linkdata="{&quot;id&quot; : &quot;SE-176fc520-258e-46d7-8ceb-9a7ac1a7e099&quot;, &quot;src&quot; : &quot;https://postfiles.pstatic.net/MjAxOTEyMDNfNzcg/MDAxNTc1MzY1NTIzMjg5.UhqQzmgHdaCvXEATfF49P2UNtMZKHCj58ltDTdhxrY0g.RNZvIHojmvEHWC-C0Yvu-ezGtirY72jBh1luy30--ZYg.JPEG.jjuni6428/SE-60594410-af9d-4b66-975d-259425cc1a98.jpg&quot;, &quot;linkUse&quot; : &quot;false&quot;, &quot;link&quot; : &quot;&quot;}">
+                            <img src="https://postfiles.pstatic.net/MjAxOTEyMDNfNzcg/MDAxNTc1MzY1NTIzMjg5.UhqQzmgHdaCvXEATfF49P2UNtMZKHCj58ltDTdhxrY0g.RNZvIHojmvEHWC-C0Yvu-ezGtirY72jBh1luy30--ZYg.JPEG.jjuni6428/SE-60594410-af9d-4b66-975d-259425cc1a98.jpg?type=w966" data-lazy-src=""
+                                data-width="886" data-height="664" alt="" class="se-image-resource">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="se-component se-text se-l-default" id="SE-74b35959-e7eb-4065-ad95-20c628ccdcfe">
+                <div class="se-component-content">
+                    <div class="se-section se-section-text se-l-default">
+                        <div class="se-module se-module-text">
+                            <!-- SE-TEXT { -->
+                            <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-0cc4f656-1654-11ea-b526-25dd7e708ef8"><span style="" class="se-fs- se-ff-   " id="SE-0cc4f655-1654-11ea-b526-4545c7d06599">​</span></p>
+                            <!-- } SE-TEXT -->
+                            <!-- SE-TEXT { -->
+                            <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-0cc51d68-1654-11ea-b526-1505ebc6842a"><span style="" class="se-fs- se-ff-   " id="SE-0cc51d67-1654-11ea-b526-cba81968f0a3">​</span></p>
+                            <!-- } SE-TEXT -->
+                            <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-05ba2338-1654-11ea-b526-5baf1cfe7c57"><span style="" class="se-fs-fs19 se-ff-   " id="SE-0cc4a82d-1654-11ea-b526-6b198e0c7942"><i><b>사용기한</b></i></span><span style="" class="se-fs- se-ff-   " id="SE-0cc4cf3e-1654-11ea-b526-73c4fd709de3">은 21년까지로 넉넉하지만</span></p>
+                            <!-- } SE-TEXT -->
+                            <!-- SE-TEXT { -->
+                            <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-05ba2339-1654-11ea-b526-a3345dd9fc6a"><span style="" class="se-fs- se-ff-   " id="SE-0cc4cf3f-1654-11ea-b526-1d30de9bf2b3">아까 설명드린대로 </span><span style="" class="se-fs- se-ff-   " id="SE-0cc4cf40-1654-11ea-b526-87556ade561f"><u><i>개봉후에는12개월 내</i></u></span>
+                                <span style="" class="se-fs- se-ff-   " id="SE-0cc4cf41-1654-11ea-b526-736e8527f1d4">에 사용하시는걸 추천드려요~</span>
+                            </p>
+                            <!-- } SE-TEXT -->
+                            <!-- SE-TEXT { -->
+                            <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-05ba233a-1654-11ea-b526-358ccc740d63"><span style="" class="se-fs- se-ff-   " id="SE-0cc4f652-1654-11ea-b526-2506c723dd77">​</span></p>
+                            <!-- } SE-TEXT -->
+                            <!-- SE-TEXT { -->
+                            <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-05ba233b-1654-11ea-b526-f1083e8f8971"><span style="" class="se-fs- se-ff-   " id="SE-0cc4f653-1654-11ea-b526-b38cce0fd11e">​</span></p>
+                            <!-- } SE-TEXT -->
+                            <!-- SE-TEXT { -->
+                            <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-0b00512c-86b7-4b16-a408-17c528b5a9d0"><span style="" class="se-fs- se-ff-   " id="SE-0cc4f654-1654-11ea-b526-69bea9b3672a">​</span></p>
+                            <!-- } SE-TEXT -->
+                            <!-- SE-TEXT { -->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="se-component se-image se-l-default" id="SE-d8a61160-b355-47e1-ba6f-b69b057f8930">
+                <div class="se-component-content se-component-content-extend">
+                    <div class="se-section se-section-image se-l-default se-section-align-center">
+
+                        <a href="#" class="se-module se-module-image __se_image_link __se_link" style=" " onclick="return false;" data-linktype="img" data-linkdata="{&quot;id&quot; : &quot;SE-d8a61160-b355-47e1-ba6f-b69b057f8930&quot;, &quot;src&quot; : &quot;https://postfiles.pstatic.net/MjAxOTEyMDNfMTQ1/MDAxNTc1MzY1NTAwMzIx.u7WdAHV7-K9xQl4sx41r_3Wy0seD_EQOURwc5EGnWY0g.E3zvWR9HGthF1cA9XPPp6TVcfbEPJtV7zNMliHhdbNYg.JPEG.jjuni6428/SE-cc8f0934-1834-459a-8fd8-fdddadb189af.jpg&quot;, &quot;linkUse&quot; : &quot;false&quot;, &quot;link&quot; : &quot;&quot;}">
+                            <img src="https://postfiles.pstatic.net/MjAxOTEyMDNfMTQ1/MDAxNTc1MzY1NTAwMzIx.u7WdAHV7-K9xQl4sx41r_3Wy0seD_EQOURwc5EGnWY0g.E3zvWR9HGthF1cA9XPPp6TVcfbEPJtV7zNMliHhdbNYg.JPEG.jjuni6428/SE-cc8f0934-1834-459a-8fd8-fdddadb189af.jpg?type=w966" data-lazy-src=""
+                                data-width="886" data-height="664" alt="" class="se-image-resource">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="se-component se-text se-l-default" id="SE-ca850f34-ec54-40b7-910d-032c94196d48">
+                <div class="se-component-content">
+                    <div class="se-section se-section-text se-l-default">
+                        <div class="se-module se-module-text">
+                            <!-- SE-TEXT { -->
+                            <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-0cc655f2-1654-11ea-b526-ab54fb3dcac0"><span style="" class="se-fs- se-ff-   " id="SE-0cc655f1-1654-11ea-b526-33e1b08d9dd9">​</span></p>
+                            <!-- } SE-TEXT -->
+                            <!-- SE-TEXT { -->
+                            <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-0cc655f4-1654-11ea-b526-6d5589b2c8e8"><span style="" class="se-fs- se-ff-   " id="SE-0cc655f3-1654-11ea-b526-e12890dd03d3">​</span></p>
+                            <!-- } SE-TEXT -->
+                            <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-05bba9de-1654-11ea-b526-81c6d3673b4f"><span style="" class="se-fs- se-ff-   " id="SE-0cc607c9-1654-11ea-b526-4f90a69eed94">마녀공장 퓨어클렌징오일은 </span><span style="" class="se-fs-fs19 se-ff-   " id="SE-0cc607ca-1654-11ea-b526-0fff942b463a"><i><b>펌핑용 타입</b></i></span>
+                                <span style="" class="se-fs- se-ff-   " id="SE-0cc607cb-1654-11ea-b526-a35e3d9ea850">으로 되어 있어서 간편한 사용은 물론,</span>
+                            </p>
+                            <!-- } SE-TEXT -->
+                            <!-- SE-TEXT { -->
+                            <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-05bba9df-1654-11ea-b526-cdd1439da272"><span style="" class="se-fs-fs19 se-ff-   " id="SE-0cc607cc-1654-11ea-b526-a76f62173edd"><i><b>보호캡</b></i></span><span style="" class="se-fs- se-ff-   " id="SE-0cc62edd-1654-11ea-b526-891eb6da6542">이 씌워져 있어 더 위생적으로 관리하실 수 있답니다+_+</span></p>
+                            <!-- } SE-TEXT -->
+                            <!-- SE-TEXT { -->
+                            <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-05bba9e0-1654-11ea-b526-43ec7694246e"><span style="" class="se-fs- se-ff-   " id="SE-0cc62ede-1654-11ea-b526-81dbe431dea9">​</span></p>
+                            <!-- } SE-TEXT -->
+                            <!-- SE-TEXT { -->
+                            <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-05bba9e1-1654-11ea-b526-6d85b39a784b"><span style="" class="se-fs- se-ff-   " id="SE-0cc62edf-1654-11ea-b526-4f2504d612dd">​</span></p>
+                            <!-- } SE-TEXT -->
+                            <!-- SE-TEXT { -->
+                            <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-b41eee56-dff7-4afb-b2c3-d57cb1bfab5a"><span style="" class="se-fs- se-ff-   " id="SE-0cc62ee0-1654-11ea-b526-f7ac079b5912">​</span></p>
+                            <!-- } SE-TEXT -->
+                            <!-- SE-TEXT { -->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="se-component se-image se-l-default" id="SE-03372d6d-f2bb-4d29-aa5e-b0b936dd2dda">
+                <div class="se-component-content se-component-content-extend">
+                    <div class="se-section se-section-image se-l-default se-section-align-center">
+
+                        <a href="#" class="se-module se-module-image __se_image_link __se_link" style=" " onclick="return false;" data-linktype="img" data-linkdata="{&quot;id&quot; : &quot;SE-03372d6d-f2bb-4d29-aa5e-b0b936dd2dda&quot;, &quot;src&quot; : &quot;https://postfiles.pstatic.net/MjAxOTEyMDNfMjkx/MDAxNTc1MzY1NTM4ODQy.dntT5cp4B1iVLTG8Bje09EfV0zkz2MJ0NXnfO-KEA7Ug.atitKxPFE0Ti4yaJYlesdnHvo2DejakN8Q-m1fxl0kkg.JPEG.jjuni6428/SE-6eb32972-d0ab-4be0-afc5-c2937e1bb110.jpg&quot;, &quot;linkUse&quot; : &quot;false&quot;, &quot;link&quot; : &quot;&quot;}">
+                            <img src="https://postfiles.pstatic.net/MjAxOTEyMDNfMjkx/MDAxNTc1MzY1NTM4ODQy.dntT5cp4B1iVLTG8Bje09EfV0zkz2MJ0NXnfO-KEA7Ug.atitKxPFE0Ti4yaJYlesdnHvo2DejakN8Q-m1fxl0kkg.JPEG.jjuni6428/SE-6eb32972-d0ab-4be0-afc5-c2937e1bb110.jpg?type=w966" data-lazy-src=""
+                                data-width="886" data-height="664" alt="" class="se-image-resource">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="se-component se-text se-l-default" id="SE-eeda4bf6-b15d-446e-8af3-b172c2c4cf06">
+                <div class="se-component-content">
+                    <div class="se-section se-section-text se-l-default">
+                        <div class="se-module se-module-text">
+                            <!-- SE-TEXT { -->
+                            <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-0cc7676d-1654-11ea-b526-594210146953"><span style="" class="se-fs- se-ff-   " id="SE-0cc7676c-1654-11ea-b526-a5598368a151">​</span></p>
+                            <!-- } SE-TEXT -->
+                            <!-- SE-TEXT { -->
+                            <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-0cc78e7f-1654-11ea-b526-5fb302a13bd8"><span style="" class="se-fs- se-ff-   " id="SE-0cc78e7e-1654-11ea-b526-61916ae9be44">​</span></p>
+                            <!-- } SE-TEXT -->
+                            <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-05bd3084-1654-11ea-b526-f9e0865e2091"><span style="" class="se-fs- se-ff-   " id="SE-0cc74055-1654-11ea-b526-4fea332b1e85">두번 정도 펌핑해준 모습이에요~</span></p>
+                            <!-- } SE-TEXT -->
+                            <!-- SE-TEXT { -->
+                            <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-05bd3085-1654-11ea-b526-0743743964d4"><span style="" class="se-fs- se-ff-   " id="SE-0cc74056-1654-11ea-b526-c9370a52e35d">내용물은 용기와 같이 약간 </span><span style="" class="se-fs-fs19 se-ff-   " id="SE-0cc74057-1654-11ea-b526-dddef2f2a84a"><i><b>노란빛</b></i></span>
+                                <span style="" class="se-fs- se-ff-   " id="SE-0cc74058-1654-11ea-b526-8b53d5ebdb94">이 도는 제형!</span>
+                            </p>
+                            <!-- } SE-TEXT -->
+                            <!-- SE-TEXT { -->
+                            <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-05bd3086-1654-11ea-b526-d5a9b8924f46"><span style="" class="se-fs- se-ff-   " id="SE-0cc76769-1654-11ea-b526-6901e26d4aab">​</span></p>
+                            <!-- } SE-TEXT -->
+                            <!-- SE-TEXT { -->
+                            <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-05bd3087-1654-11ea-b526-29322f3d303a"><span style="" class="se-fs- se-ff-   " id="SE-0cc7676a-1654-11ea-b526-0b1942c7608e">​</span></p>
+                            <!-- } SE-TEXT -->
+                            <!-- SE-TEXT { -->
+                            <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-5beec35a-ce73-473a-80dd-518d5bf53de5"><span style="" class="se-fs- se-ff-   " id="SE-0cc7676b-1654-11ea-b526-33b0ce3bdeb0">​</span></p>
+                            <!-- } SE-TEXT -->
+                            <!-- SE-TEXT { -->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="se-component se-image se-l-default" id="SE-ecc728ae-fe2e-436c-b89a-76cea99604b4">
+                <div class="se-component-content se-component-content-normal">
+                    <div class="se-section se-section-image se-l-default se-section-align-center" style="max-width:656px;">
+
+                        <a href="#" class="se-module se-module-image __se_image_link __se_link" style=" " onclick="return false;" data-linktype="img" data-linkdata="{&quot;id&quot; : &quot;SE-ecc728ae-fe2e-436c-b89a-76cea99604b4&quot;, &quot;src&quot; : &quot;https://postfiles.pstatic.net/MjAxOTEyMDNfMTgx/MDAxNTc1MzY0Njk1NTY3.WNGmlQoDyoDxaZfTtucR4aQcReM5yklChCWmrw9jeLwg.CIi5-7cmapNNCJ75Rbxb_OqlAX1F6X31DjAcvHqIErYg.GIF.jjuni6428/20191129_234851_1.gif&quot;, &quot;linkUse&quot; : &quot;false&quot;, &quot;link&quot; : &quot;&quot;}">
+                            <img src="https://postfiles.pstatic.net/MjAxOTEyMDNfMTgx/MDAxNTc1MzY0Njk1NTY3.WNGmlQoDyoDxaZfTtucR4aQcReM5yklChCWmrw9jeLwg.CIi5-7cmapNNCJ75Rbxb_OqlAX1F6X31DjAcvHqIErYg.GIF.jjuni6428/20191129_234851_1.gif?type=w966" data-lazy-src="" data-width="656" data-height="368"
+                                alt="" class="se-image-resource">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="se-component se-text se-l-default" id="SE-70fa1f0a-2670-462a-9e10-5b5ec0f67508">
+                <div class="se-component-content">
+                    <div class="se-section se-section-text se-l-default">
+                        <div class="se-module se-module-text">
+                            <!-- SE-TEXT { -->
+                            <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-0cc89ff9-1654-11ea-b526-b92516c565b3"><span style="" class="se-fs- se-ff-   " id="SE-0cc89ff8-1654-11ea-b526-1568e7991a54">​</span></p>
+                            <!-- } SE-TEXT -->
+                            <!-- SE-TEXT { -->
+                            <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-0cc89ffb-1654-11ea-b526-331ceec3ecdc"><span style="" class="se-fs- se-ff-   " id="SE-0cc89ffa-1654-11ea-b526-edead59dc5d1">​</span></p>
+                            <!-- } SE-TEXT -->
+                            <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-05be901a-1654-11ea-b526-d745f1d06a33"><span style="" class="se-fs- se-ff-   " id="SE-0cc851d0-1654-11ea-b526-3b4283debde5">물보다는 점성이 조금 더 있었지만</span></p>
+                            <!-- } SE-TEXT -->
+                            <!-- SE-TEXT { -->
+                            <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-05be901b-1654-11ea-b526-41ac31a89558"><span style="" class="se-fs- se-ff-   " id="SE-0cc851d1-1654-11ea-b526-593bee03587d">잘 흘러내릴 만큼 </span><span style="" class="se-fs-fs19 se-ff-   " id="SE-0cc878e2-1654-11ea-b526-0f4e81c706f9"><i><b>묽고 가벼운 제형</b></i></span>
+                                <span style="" class="se-fs- se-ff-   " id="SE-0cc878e3-1654-11ea-b526-b7f830309d85">이라 </span>
+                            </p>
+                            <!-- } SE-TEXT -->
+                            <!-- SE-TEXT { -->
+                            <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-05be901c-1654-11ea-b526-43742aee3f84"><span style="" class="se-fs- se-ff-   " id="SE-0cc878e4-1654-11ea-b526-31661f5aeb84">얼굴에 롤링할때도 부드럽게 잘 되더라구요^^</span></p>
+                            <!-- } SE-TEXT -->
+                            <!-- SE-TEXT { -->
+                            <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-05be901d-1654-11ea-b526-6b0277ae51b1"><span style="" class="se-fs- se-ff-   " id="SE-0cc878e5-1654-11ea-b526-a1258c76fb6d">​</span></p>
+                            <!-- } SE-TEXT -->
+                            <!-- SE-TEXT { -->
+                            <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-05be901e-1654-11ea-b526-f9ec45613da3"><span style="" class="se-fs- se-ff-   " id="SE-0cc878e6-1654-11ea-b526-a75d2cd9060a">​</span></p>
+                            <!-- } SE-TEXT -->
+                            <!-- SE-TEXT { -->
+                            <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-3a3304f7-895a-4976-9af6-7182d6149c24"><span style="" class="se-fs- se-ff-   " id="SE-0cc89ff7-1654-11ea-b526-f15e655f889e">​</span></p>
+                            <!-- } SE-TEXT -->
+                            <!-- SE-TEXT { -->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="se-component se-image se-l-default" id="SE-f0c2b1e3-304d-4f92-9ce3-b71ab6c72166">
+                <div class="se-component-content se-component-content-normal">
+                    <div class="se-section se-section-image se-l-default se-section-align-center" style="max-width:700px;">
+
+                        <a href="#" class="se-module se-module-image __se_image_link __se_link" style=" " onclick="return false;" data-linktype="img" data-linkdata="{&quot;id&quot; : &quot;SE-f0c2b1e3-304d-4f92-9ce3-b71ab6c72166&quot;, &quot;src&quot; : &quot;https://postfiles.pstatic.net/MjAxOTEyMDNfMjUx/MDAxNTc1MzgwMjI3NzQ0.2yxXHlDwWDe1gtFvCYBWth5vTbeCPYsXZ3ReMOqwKKgg.FPuwBLQnJCTIgvn2KO--adM23cW1lZQAAeyy9JhoGx8g.JPEG.jjuni6428/SE-f0c2b1e3-304d-4f92-9ce3-b71ab6c72166.jpg&quot;, &quot;linkUse&quot; : &quot;false&quot;, &quot;link&quot; : &quot;&quot;}">
+                            <img src="https://postfiles.pstatic.net/MjAxOTEyMDNfMjUx/MDAxNTc1MzgwMjI3NzQ0.2yxXHlDwWDe1gtFvCYBWth5vTbeCPYsXZ3ReMOqwKKgg.FPuwBLQnJCTIgvn2KO--adM23cW1lZQAAeyy9JhoGx8g.JPEG.jjuni6428/SE-f0c2b1e3-304d-4f92-9ce3-b71ab6c72166.jpg?type=w966" data-lazy-src=""
+                                data-width="700" data-height="876" alt="" class="se-image-resource">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="box card-1" style="height: 140px;padding-top: 9px;margin-bottom: 54px;">
+                <div class="se-component se-text se-l-default" id="SE-7a5a1c93-e18c-417c-8438-d7f2420ad143">
+                    <div class="se-component-content">
+                        <div class="se-section se-section-text se-l-default">
+                            <div class="se-module se-module-text">
+                                <!-- SE-TEXT { -->
+                                <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-05bfefb1-1654-11ea-b526-fb049d35208a"><span style="" class="se-fs- se-ff-   " id="SE-0cc9b16c-1654-11ea-b526-73c99c884851">아무래도 클렌징오일 단독만으로 포인트 메이크업까지는 어렵기 때문에</span></p>
+                                <!-- } SE-TEXT -->
+                                <!-- SE-TEXT { -->
+                                <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-05bfefb2-1654-11ea-b526-bdc90b462691"><span style="" class="se-fs- se-ff-   " id="SE-0cc9b16d-1654-11ea-b526-f94fd4064792">먼저 진한 눈화장을 전용 리무버로 지워주었어요</span></p>
+                                <!-- } SE-TEXT -->
+                                <!-- SE-TEXT { -->
+                                <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-05bfefb3-1654-11ea-b526-e372a703c172"><span style="" class="se-fs- se-ff-   " id="SE-0cc9b16e-1654-11ea-b526-ed57f8f5534b">그랬더니 볼쪽에 지저분하게 남아있는 </span><span style="" class="se-fs- se-ff-   " id="SE-0cc9b16f-1654-11ea-b526-39719a6522d7"><u><i>마스카라 잔여물과 파운데이션</i></u></span>
+                                    <span style="" class="se-fs- se-ff-   " id="SE-0cc9b170-1654-11ea-b526-7389a20def23">이 보이시죠^^;;</span>
+                                </p>
+                                <!-- } SE-TEXT -->
+                                <!-- SE-TEXT { -->
+                                <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-05bfefb4-1654-11ea-b526-a3eec41890ba"><span style="" class="se-fs- se-ff-   " id="SE-0cc9d881-1654-11ea-b526-e9ac307b04c6">​</span></p>
+                                <!-- } SE-TEXT -->
+                                <!-- SE-TEXT { -->
+                                <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-05bfefb5-1654-11ea-b526-21e2ce875224"><span style="" class="se-fs- se-ff-   " id="SE-0cc9d882-1654-11ea-b526-b36b3a86d664">​</span></p>
+                                <!-- } SE-TEXT -->
+                                <!-- SE-TEXT { -->
+                                <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-b438dca9-3a62-4209-8950-ef05e46efb57"><span style="" class="se-fs- se-ff-   " id="SE-0cc9d883-1654-11ea-b526-63d8901a7e94">​</span></p>
+                                <!-- } SE-TEXT -->
+                                <!-- SE-TEXT { -->
+                                <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-0cc9d885-1654-11ea-b526-dba7e5d34e88"><span style="" class="se-fs- se-ff-   " id="SE-0cc9d884-1654-11ea-b526-69f6c1529ef9">​</span></p>
+                                <!-- } SE-TEXT -->
+                                <!-- SE-TEXT { -->
+                                <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-0cc9ff97-1654-11ea-b526-1f7e6397a024"><span style="" class="se-fs- se-ff-   " id="SE-0cc9ff96-1654-11ea-b526-6130226dd528">​</span></p>
+                                <!-- } SE-TEXT -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="se-component se-image se-l-default" id="SE-950fb2e4-e4e5-40e2-ae15-96684d1a82b0">
+                <div class="se-component-content se-component-content-extend">
+                    <div class="se-section se-section-image se-l-default se-section-align-center">
+
+                        <a href="#" class="se-module se-module-image __se_image_link __se_link" style=" " onclick="return false;" data-linktype="img" data-linkdata="{&quot;id&quot; : &quot;SE-950fb2e4-e4e5-40e2-ae15-96684d1a82b0&quot;, &quot;src&quot; : &quot;https://postfiles.pstatic.net/MjAxOTEyMDNfMTkz/MDAxNTc1MzY1NTY2MjM5.QxglaNbXTQ_6KFsNrq19oE-UPOAFX1Lc6zvQoYwwIn8g.cOUhUTiNB-XeHC-h1QNWnK51iYRHL4g0HCd_zun2IEYg.JPEG.jjuni6428/SE-11bc0d0e-4673-49d8-a4bd-72073a2ff0f0.jpg&quot;, &quot;linkUse&quot; : &quot;false&quot;, &quot;link&quot; : &quot;&quot;}">
+                            <img src="https://postfiles.pstatic.net/MjAxOTEyMDNfMTkz/MDAxNTc1MzY1NTY2MjM5.QxglaNbXTQ_6KFsNrq19oE-UPOAFX1Lc6zvQoYwwIn8g.cOUhUTiNB-XeHC-h1QNWnK51iYRHL4g0HCd_zun2IEYg.JPEG.jjuni6428/SE-11bc0d0e-4673-49d8-a4bd-72073a2ff0f0.jpg?type=w966" data-lazy-src=""
+                                data-width="886" data-height="343" alt="" class="se-image-resource">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="box card-1" style="height: 160px;padding-top: 9px;margin-bottom: 54px;">
+                <div class="se-component se-text se-l-default" id="SE-737f6f79-9133-4533-a57c-5df47ff11cce">
+                    <div class="se-component-content">
+                        <div class="se-section se-section-text se-l-default">
+                            <div class="se-module se-module-text">
+                                <!-- SE-TEXT { -->
+                                <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-05c14f48-1654-11ea-b526-276ed5672f51"><span style="" class="se-fs- se-ff-   " id="SE-0ccac2e8-1654-11ea-b526-5183dcedc4ee">마른 얼굴 그대로 마녀공장 퓨어 클렌징 오일을 적당량 덜어낸뒤</span></p>
+                                <!-- } SE-TEXT -->
+                                <!-- SE-TEXT { -->
+                                <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-05c14f49-1654-11ea-b526-736f1edbcccc"><span style="" class="se-fs- se-ff-   " id="SE-0ccae9f9-1654-11ea-b526-b7357d20c702">손으로 부드럽게 </span><span style="" class="se-fs- se-ff-   " id="SE-0ccae9fa-1654-11ea-b526-e5f947ac7704"><u><i>롤링해주듯 마사지</i></u></span>
+                                    <span style="" class="se-fs- se-ff-   " id="SE-0ccae9fb-1654-11ea-b526-69c72b14dc0d">해줍니다~</span>
+                                </p>
+                                <!-- } SE-TEXT -->
+                                <!-- SE-TEXT { -->
+                                <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-05c14f4a-1654-11ea-b526-4b8855c7419a"><span style="" class="se-fs- se-ff-   " id="SE-0ccae9fc-1654-11ea-b526-1d71e1b91c15">블랙헤드나 화이트 헤드 고민이 있으신 분들은 </span></p>
+                                <!-- } SE-TEXT -->
+                                <!-- SE-TEXT { -->
+                                <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-05c14f4b-1654-11ea-b526-1d7c5f7ba996"><span style="" class="se-fs- se-ff-   " id="SE-0ccb110d-1654-11ea-b526-31ed5b93503d">그 부위를 집중적으로 롤링해주시면 효과가 더 좋답니다+_+</span></p>
+                                <!-- } SE-TEXT -->
+                                <!-- SE-TEXT { -->
+                                <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-05c1765c-1654-11ea-b526-c9da9dd34f9c"><span style="" class="se-fs- se-ff-   " id="SE-0ccb110e-1654-11ea-b526-8522d8961270">​</span></p>
+                                <!-- } SE-TEXT -->
+                                <!-- SE-TEXT { -->
+                                <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-05c1765d-1654-11ea-b526-735e90b9c566"><span style="" class="se-fs- se-ff-   " id="SE-0ccb110f-1654-11ea-b526-213f72717e06">​</span></p>
+                                <!-- } SE-TEXT -->
+                                <!-- SE-TEXT { -->
+                                <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-01a6ef5b-3332-483c-a775-3db46618af79"><span style="" class="se-fs- se-ff-   " id="SE-0ccb1110-1654-11ea-b526-330c53033f6b">​</span></p>
+                                <!-- } SE-TEXT -->
+                                <!-- SE-TEXT { -->
+                                <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-0ccb3822-1654-11ea-b526-1981c78fe660"><span style="" class="se-fs- se-ff-   " id="SE-0ccb3821-1654-11ea-b526-09bd440ef123">​</span></p>
+                                <!-- } SE-TEXT -->
+                                <!-- SE-TEXT { -->
+                                <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-0ccb3824-1654-11ea-b526-55e696a0d885"><span style="" class="se-fs- se-ff-   " id="SE-0ccb3823-1654-11ea-b526-d1f3fdbd3871">​</span></p>
+                                <!-- } SE-TEXT -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="se-component se-image se-l-default" id="SE-7ca7dc30-87c1-457b-808e-31d828a8aba6">
+                <div class="se-component-content se-component-content-normal">
+                    <div class="se-section se-section-image se-l-default se-section-align-center" style="max-width:886px;">
+
+                        <a href="#" class="se-module se-module-image __se_image_link __se_link" style=" " onclick="return false;" data-linktype="img" data-linkdata="{&quot;id&quot; : &quot;SE-7ca7dc30-87c1-457b-808e-31d828a8aba6&quot;, &quot;src&quot; : &quot;https://postfiles.pstatic.net/MjAxOTEyMDNfMyAg/MDAxNTc1MzgwMjMyNDk0.puAweDYcwU4mfqo5SPJqsPikhiTFXHy5liMgoD3kQTUg.ArO1vH0P635myuaFCMih-5qgYg94XMvl_IWgrueCaOIg.JPEG.jjuni6428/SE-7ca7dc30-87c1-457b-808e-31d828a8aba6.jpg&quot;, &quot;linkUse&quot; : &quot;false&quot;, &quot;link&quot; : &quot;&quot;}">
+                            <img width="500px" src="https://postfiles.pstatic.net/MjAxOTEyMDNfMyAg/MDAxNTc1MzgwMjMyNDk0.puAweDYcwU4mfqo5SPJqsPikhiTFXHy5liMgoD3kQTUg.ArO1vH0P635myuaFCMih-5qgYg94XMvl_IWgrueCaOIg.JPEG.jjuni6428/SE-7ca7dc30-87c1-457b-808e-31d828a8aba6.jpg?type=w966"
+                                data-lazy-src="" data-width="886" data-height="1044" alt="" class="se-image-resource">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="box card-1" style="height: 200px;padding-top: 9px;margin-bottom: 54px;">
+                <div class="se-component se-text se-l-default" id="SE-ec560279-035a-407a-838d-1a160024b7d6">
+                    <div class="se-component-content">
+                        <div class="se-section se-section-text se-l-default">
+                            <div class="se-module se-module-text">
+                                <!-- SE-TEXT { -->
+                                <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-05c2d5f0-1654-11ea-b526-93def51dbc4c"><span style="" class="se-fs- se-ff-   " id="SE-0ccc2285-1654-11ea-b526-0bd8fcea7bf9">이제 미온수를 조금씩 묻혀 다시 롤링하듯이 마사지를 해주게되면</span></p>
+                                <!-- } SE-TEXT -->
+                                <!-- SE-TEXT { -->
+                                <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-05c2d5f1-1654-11ea-b526-218043f37244"><span style="" class="se-fs- se-ff-   " id="SE-0ccc4996-1654-11ea-b526-cb5f4a26b67e">사진처럼 </span><span style="" class="se-fs- se-ff-   " id="SE-0ccc4997-1654-11ea-b526-ff2d6ee9873e"><u><i>오일의 유화과정</i></u></span><span style=""
+                                        class="se-fs- se-ff-   " id="SE-0ccc4998-1654-11ea-b526-ad5a32b99f5f">으로 </span><span style="" class="se-fs-fs19 se-ff-   " id="SE-0ccc4999-1654-11ea-b526-4178f99322cd"><i><b>하얀빛</b></i></span><span style="" class="se-fs- se-ff-   "
+                                        id="SE-0ccc499a-1654-11ea-b526-c7f568ddaf70">으로 변하게 되는데요~</span></p>
+                                <!-- } SE-TEXT -->
+                                <!-- SE-TEXT { -->
+                                <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-05c2d5f2-1654-11ea-b526-178d3b6f7eb1"><span style="" class="se-fs- se-ff-   " id="SE-0ccc499b-1654-11ea-b526-89e9182332e5">굴곡진 부위까지 구서구석 클렌징되면서 메이크업이 녹아 나온다고 생각하시면 됩니다</span></p>
+                                <!-- } SE-TEXT -->
+                                <!-- SE-TEXT { -->
+                                <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-05c2d5f3-1654-11ea-b526-31dca2f3c69f"><span style="" class="se-fs- se-ff-   " id="SE-0ccc70ac-1654-11ea-b526-27a15e2e766a">얼굴 전체가 온통 오일 투성이인데도 순한 성분 덕분인지</span></p>
+                                <!-- } SE-TEXT -->
+                                <!-- SE-TEXT { -->
+                                <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-05c2d5f4-1654-11ea-b526-21893bebbbef"><span style="" class="se-fs- se-ff-   " id="SE-0ccc70ad-1654-11ea-b526-9128a2a46bc3">눈에 들어가도 전혀 따갑거나 그러지 않았어요^^</span></p>
+                                <!-- } SE-TEXT -->
+                                <!-- SE-TEXT { -->
+                                <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-05c2d5f5-1654-11ea-b526-85e1f2669ad1"><span style="" class="se-fs- se-ff-   " id="SE-0ccc70ae-1654-11ea-b526-c1b03036e2c6">​</span></p>
+                                <!-- } SE-TEXT -->
+                                <!-- SE-TEXT { -->
+                                <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-05c2d5f6-1654-11ea-b526-e1a229832c50"><span style="" class="se-fs- se-ff-   " id="SE-0ccc70af-1654-11ea-b526-67f70e5e3e71">​</span></p>
+                                <!-- } SE-TEXT -->
+                                <!-- SE-TEXT { -->
+                                <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-62fced01-3e47-4283-9576-8deccdf0d3a4"><span style="" class="se-fs- se-ff-   " id="SE-0ccc97c0-1654-11ea-b526-fd6c4c6509a8">​</span></p>
+                                <!-- } SE-TEXT -->
+                                <!-- SE-TEXT { -->
+                                <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-0ccc97c2-1654-11ea-b526-5b837e1af68a"><span style="" class="se-fs- se-ff-   " id="SE-0ccc97c1-1654-11ea-b526-793e393efd49">​</span></p>
+                                <!-- } SE-TEXT -->
+                                <!-- SE-TEXT { -->
+                                <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-0ccc97c4-1654-11ea-b526-2f9c3b25a66e"><span style="" class="se-fs- se-ff-   " id="SE-0ccc97c3-1654-11ea-b526-076737d29ffe">​</span></p>
+                                <!-- } SE-TEXT -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="se-component se-imageStrip se-imageStrip2 se-l-default" id="SE-95298567-8751-45c9-a9fd-06ed82338c18">
+                <div class="se-component-content se-component-content-extend">
+                    <div class="se-section se-section-imageStrip se-l-default">
+                        <div class="se-imageStrip-container se-imageStrip-col-2">
+                            <a href="#" class="se-module se-module-image __se_image_link __se_link" style=" width:52.36294896030246%;" onclick="return false;" data-linktype="img" data-linkdata="{&quot;id&quot; : &quot;SE-dba1681b-ff1f-4e95-801c-3e6cec41d028&quot;, &quot;src&quot; : &quot;https://postfiles.pstatic.net/MjAxOTEyMDNfMzgg/MDAxNTc1MzgwMjM3Mzcy.a3zryaZV1WI3l_ynTkChQ7fUFy0xRPmcJ0rPMD3J4Bcg.i9dvjH2akGQFmC6bOu4-bGLRA5SlWKJaQasmRA9IeScg.JPEG.jjuni6428/SE-dba1681b-ff1f-4e95-801c-3e6cec41d028.jpg&quot;, &quot;linkUse&quot; : &quot;false&quot;, &quot;link&quot; : &quot;&quot;}">
+                                <img width="500px" src="https://postfiles.pstatic.net/MjAxOTEyMDNfMzgg/MDAxNTc1MzgwMjM3Mzcy.a3zryaZV1WI3l_ynTkChQ7fUFy0xRPmcJ0rPMD3J4Bcg.i9dvjH2akGQFmC6bOu4-bGLRA5SlWKJaQasmRA9IeScg.JPEG.jjuni6428/SE-dba1681b-ff1f-4e95-801c-3e6cec41d028.jpg?type=w966"
+                                    data-lazy-src="" data-width="900" data-height="756" alt="" class="se-image-resource">
+                            </a>
+                            <a href="#" class="se-module se-module-image __se_image_link __se_link" style=" width:47.63705103969754%;" onclick="return false;" data-linktype="img" data-linkdata="{&quot;id&quot; : &quot;SE-2dafd750-a96b-45d4-9a39-d8a3bc36aa05&quot;, &quot;src&quot; : &quot;https://postfiles.pstatic.net/MjAxOTEyMDNfOTYg/MDAxNTc1MzgwMjgxNjk4.B5Wnj22AuVe9e3kPQXgAXuIouHz4Gel73kcVt3J8eP4g.LeOzXckA8K7LLXRDlGy4o7KTU7f3ifp9Vbn013p62d4g.JPEG.jjuni6428/SE-2dafd750-a96b-45d4-9a39-d8a3bc36aa05.jpg&quot;, &quot;linkUse&quot; : &quot;false&quot;, &quot;link&quot; : &quot;&quot;}">
+                                <img width="500px" src="https://postfiles.pstatic.net/MjAxOTEyMDNfOTYg/MDAxNTc1MzgwMjgxNjk4.B5Wnj22AuVe9e3kPQXgAXuIouHz4Gel73kcVt3J8eP4g.LeOzXckA8K7LLXRDlGy4o7KTU7f3ifp9Vbn013p62d4g.JPEG.jjuni6428/SE-2dafd750-a96b-45d4-9a39-d8a3bc36aa05.jpg?type=w966"
+                                    data-lazy-src="" data-width="900" data-height="831" alt="" class="se-image-resource">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box card-1" style="height: 200px;padding-top: 9px;margin-bottom: 54px;">
+                <div class="se-component se-text se-l-default" id="SE-ab2f262c-9f04-45b0-9908-0d34686c423e">
+                    <div class="se-component-content">
+                        <div class="se-section se-section-text se-l-default">
+                            <div class="se-module se-module-text">
+                                <!-- SE-TEXT { -->
+                                <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-05c51feb-1654-11ea-b526-4d53b880d53d"><span style="" class="se-fs- se-ff-   " id="SE-0ccda935-1654-11ea-b526-7d16eba3aede">이 과정을 여러번 반복하면서 씻어내니 </span><span style="" class="se-fs- se-ff-   " id="SE-0ccda936-1654-11ea-b526-23b04ae0217b"><u><i>말끔하게 클렌징 되는 느낌</i></u></span>
+                                    <span style="" class="se-fs- se-ff-   " id="SE-0ccda937-1654-11ea-b526-6b15b62c9619">이었어요~</span>
+                                </p>
+                                <!-- } SE-TEXT -->
+                                <!-- SE-TEXT { -->
+                                <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-05c51fec-1654-11ea-b526-c990eac635b5"><span style="" class="se-fs- se-ff-   " id="SE-0ccda938-1654-11ea-b526-6b9a4de599b6">메이크업이 지워지면서 트러블 자국이 드러나게 되었지만</span></p>
+                                <!-- } SE-TEXT -->
+                                <!-- SE-TEXT { -->
+                                <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-05c51fed-1654-11ea-b526-e3e3627e8a5d"><span style="" class="se-fs- se-ff-   " id="SE-0ccdd049-1654-11ea-b526-57945e2e0250">처음에 남아있던 잔여물은 깨끗하게 사라졌답니다ㅎㅎㅎ</span></p>
+                                <!-- } SE-TEXT -->
+                                <!-- SE-TEXT { -->
+                                <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-05c51fee-1654-11ea-b526-bb0dd6571631"><span style="" class="se-fs- se-ff-   " id="SE-0ccdd04a-1654-11ea-b526-3978c075cc54">저는 원래 폼으로 2차 세안을 해주는데 이미 워낙 깔끔하고 매끈~하니</span></p>
+                                <!-- } SE-TEXT -->
+                                <!-- SE-TEXT { -->
+                                <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-05c51fef-1654-11ea-b526-979c52a7e4df"><span style="" class="se-fs- se-ff-   " id="SE-0ccdd04b-1654-11ea-b526-2b53fdea3bd0">더 이상의 필요성을 느끼지 못하겠더라구요&gt;ㅁ&lt;</span></p>
+                                <!-- } SE-TEXT -->
+                                <!-- SE-TEXT { -->
+                                <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-05c51ff0-1654-11ea-b526-6189e3d7a150"><span style="" class="se-fs- se-ff-   " id="SE-0ccdd04c-1654-11ea-b526-3d44bde28446">​</span></p>
+                                <!-- } SE-TEXT -->
+                                <!-- SE-TEXT { -->
+                                <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-05c51ff1-1654-11ea-b526-0f65a8370b62"><span style="" class="se-fs- se-ff-   " id="SE-0ccdf75d-1654-11ea-b526-4dd8bc6f14c0">​</span></p>
+                                <!-- } SE-TEXT -->
+                                <!-- SE-TEXT { -->
+                                <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-cb549eee-2134-4d23-b516-640133a0d3d3"><span style="" class="se-fs- se-ff-   " id="SE-0ccdf75e-1654-11ea-b526-6737395b9cb4">​</span></p>
+                                <!-- } SE-TEXT -->
+                                <!-- SE-TEXT { -->
+                                <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-0ccdf760-1654-11ea-b526-d3917de0572f"><span style="" class="se-fs- se-ff-   " id="SE-0ccdf75f-1654-11ea-b526-43bd87198ca0">​</span></p>
+                                <!-- } SE-TEXT -->
+                                <!-- SE-TEXT { -->
+                                <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-0ccdf762-1654-11ea-b526-57fe727b3736"><span style="" class="se-fs- se-ff-   " id="SE-0ccdf761-1654-11ea-b526-0946fe8ffdef">​</span></p>
+                                <!-- } SE-TEXT -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="se-component se-imageStrip se-imageStrip2 se-l-default" id="SE-155687b4-9058-428a-8232-dda4860403c2">
+                <div class="se-component-content se-component-content-extend">
+                    <div class="se-section se-section-imageStrip se-l-default">
+                        <div class="se-imageStrip-container se-imageStrip-col-2">
+                            <a href="#" class="se-module se-module-image __se_image_link __se_link" style=" width:47.99196787148594%;" onclick="return false;" data-linktype="img" data-linkdata="{&quot;id&quot; : &quot;SE-7e2725bb-9165-4ba3-90c2-f68d0f644b3d&quot;, &quot;src&quot; : &quot;https://postfiles.pstatic.net/MjAxOTEyMDNfMjA0/MDAxNTc1MzgwMjQ2MTgx.Z1h4bGu0_nG3-ICjXjkgiGQpgPDaOnVT9fKEx00-Jhwg.qW3PhqCsXkrb4DgYFpFScKQ2mJNlWzXAjE_ZMIp666sg.JPEG.jjuni6428/SE-7e2725bb-9165-4ba3-90c2-f68d0f644b3d.jpg&quot;, &quot;linkUse&quot; : &quot;false&quot;, &quot;link&quot; : &quot;&quot;}">
+                                <img width="500px" src="https://postfiles.pstatic.net/MjAxOTEyMDNfMjA0/MDAxNTc1MzgwMjQ2MTgx.Z1h4bGu0_nG3-ICjXjkgiGQpgPDaOnVT9fKEx00-Jhwg.qW3PhqCsXkrb4DgYFpFScKQ2mJNlWzXAjE_ZMIp666sg.JPEG.jjuni6428/SE-7e2725bb-9165-4ba3-90c2-f68d0f644b3d.jpg?type=w966"
+                                    data-lazy-src="" data-width="1300" data-height="777" alt="" class="se-image-resource">
+                            </a>
+                            <a href="#" class="se-module se-module-image __se_image_link __se_link" style=" width:52.00803212851406%;" onclick="return false;" data-linktype="img" data-linkdata="{&quot;id&quot; : &quot;SE-77f127e9-6867-40d0-8906-e11ac0846745&quot;, &quot;src&quot; : &quot;https://postfiles.pstatic.net/MjAxOTEyMDNfNTUg/MDAxNTc1MzgwMjQ5MTM5.UC7otEKUXWDldAO5dyE7Gfwk3DAPhB7XYX-U46W1-2cg.oqi7fL3v6C7Zh0IWSVNM6Msi-CKRNwOL72rlfRBLHXMg.JPEG.jjuni6428/SE-77f127e9-6867-40d0-8906-e11ac0846745.jpg&quot;, &quot;linkUse&quot; : &quot;false&quot;, &quot;link&quot; : &quot;&quot;}">
+                                <img width="500px" src="https://postfiles.pstatic.net/MjAxOTEyMDNfNTUg/MDAxNTc1MzgwMjQ5MTM5.UC7otEKUXWDldAO5dyE7Gfwk3DAPhB7XYX-U46W1-2cg.oqi7fL3v6C7Zh0IWSVNM6Msi-CKRNwOL72rlfRBLHXMg.JPEG.jjuni6428/SE-77f127e9-6867-40d0-8906-e11ac0846745.jpg?type=w966"
+                                    data-lazy-src="" data-width="1300" data-height="717" alt="" class="se-image-resource">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="se-component se-text se-l-default" id="SE-dc09d8e2-12bf-4d2a-9921-8b4fb5d96526">
+                <div class="se-component-content">
+                    <div class="se-section se-section-text se-l-default">
+                        <div class="se-module se-module-text">
+                            <!-- SE-TEXT { -->
+                            <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-0ccf2feb-1654-11ea-b526-7b4d7e4f993f"><span style="" class="se-fs- se-ff-   " id="SE-0ccf2fea-1654-11ea-b526-df089cab2c94">​</span></p>
+                            <!-- } SE-TEXT -->
+                            <!-- SE-TEXT { -->
+                            <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-0ccf56fd-1654-11ea-b526-5b7f71e23256"><span style="" class="se-fs- se-ff-   " id="SE-0ccf56fc-1654-11ea-b526-eb501b4f6a5a">​</span></p>
+                            <!-- } SE-TEXT -->
+                            <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-05c790f6-1654-11ea-b526-899f6b3e63ff"><span style="" class="se-fs- se-ff-   " id="SE-0ccf08d3-1654-11ea-b526-a7452f1c9aa4">요즘 저의 고민이었던 코 </span><span style="" class="se-fs-fs19 se-ff-   " id="SE-0ccf08d4-1654-11ea-b526-3917818ad0ad"><i><b>블랙헤드</b></i></span>
+                                <span style="" class="se-fs- se-ff-   " id="SE-0ccf08d5-1654-11ea-b526-4bd9d4a4d4fb"> 부분도 역시 훨씬 말끔해진 느낌!</span>
+                            </p>
+                            <!-- } SE-TEXT -->
+                            <!-- SE-TEXT { -->
+                            <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-05c790f7-1654-11ea-b526-bdec6e6bd3ec"><span style="" class="se-fs- se-ff-   " id="SE-0ccf2fe6-1654-11ea-b526-3df76e12be8c">계속해서 사용하다보면 저도 이제 곧 예전의 깨끗한 피부를 만나볼 수 있을듯요+_+</span></p>
+                            <!-- } SE-TEXT -->
+                            <!-- SE-TEXT { -->
+                            <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-05c790f8-1654-11ea-b526-a15bd10711a9"><span style="" class="se-fs- se-ff-   " id="SE-0ccf2fe7-1654-11ea-b526-9b8edbbe2c18">​</span></p>
+                            <!-- } SE-TEXT -->
+                            <!-- SE-TEXT { -->
+                            <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-05c790f9-1654-11ea-b526-813cb79c0ea2"><span style="" class="se-fs- se-ff-   " id="SE-0ccf2fe8-1654-11ea-b526-d7940cafa781">​</span></p>
+                            <!-- } SE-TEXT -->
+                            <!-- SE-TEXT { -->
+                            <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-416fce2c-dd29-472f-9b72-f3ef5756e71b"><span style="" class="se-fs- se-ff-   " id="SE-0ccf2fe9-1654-11ea-b526-65232ec76714">​</span></p>
+                            <!-- } SE-TEXT -->
+                            <!-- SE-TEXT { -->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="se-component se-image se-l-default" id="SE-4d8c3fca-d0af-42d8-9fbb-6ddb60e16cc0">
+                <div class="se-component-content se-component-content-normal">
+                    <div class="se-section se-section-image se-l-default se-section-align-center" style="max-width:500px;">
+
+                        <a href="#" class="se-module se-module-image __se_image_link __se_link" style=" " onclick="return false;" data-linktype="img" data-linkdata="{&quot;id&quot; : &quot;SE-4d8c3fca-d0af-42d8-9fbb-6ddb60e16cc0&quot;, &quot;src&quot; : &quot;https://postfiles.pstatic.net/MjAxOTEyMDNfMjAy/MDAxNTc1Mzc2MDA4NDY4.LSrjefq7F22i8d1Y6NowfX7Bm1lsiv26oDSp_R2S_U8g.HWKSVMoHF0pPW6i015mRvnprWQCsswTVhxEix1sXIbcg.PNG.jjuni6428/SE-04b58457-080f-4c0e-b639-2f5236495330.png&quot;, &quot;linkUse&quot; : &quot;false&quot;, &quot;link&quot; : &quot;&quot;}">
+                            <img src="https://postfiles.pstatic.net/MjAxOTEyMDNfMjAy/MDAxNTc1Mzc2MDA4NDY4.LSrjefq7F22i8d1Y6NowfX7Bm1lsiv26oDSp_R2S_U8g.HWKSVMoHF0pPW6i015mRvnprWQCsswTVhxEix1sXIbcg.PNG.jjuni6428/SE-04b58457-080f-4c0e-b639-2f5236495330.png?type=w966" data-lazy-src=""
+                                data-width="500" data-height="500" alt="" class="se-image-resource">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="box card-1" style="height: 323px;padding-top: 9px;margin-bottom: 54px;">
+                <div class="se-component se-quotation se-l-quotation_bubble" id="SE-6f0a963b-4557-4b01-90ee-a31eb1ed80fd">
+                    <div class="se-component-content">
+                        <div class="se-section se-section-quotation se-l-quotation_bubble">
+                            <blockquote class="se-quotation-container">
+                                <div class="se-module se-module-text se-quote">
+                                    <!-- SE-TEXT { -->
+                                    <p class="se-text-paragraph se-text-paragraph-align- " style="" id="SE-ed4ba1b1-be2e-4eff-a950-1795dcd1397a"><span style="" class="se-fs- se-ff-   " id="SE-0cd0415e-1654-11ea-b526-cf9baa93b653">마녀공장 퓨어 클렌징 오일 </span></p>
+                                    <!-- } SE-TEXT -->
+                                </div>
+                                <div class="se-module se-module-text">
+                                    <!-- SE-TEXT { -->
+                                    <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-05c9179d-1654-11ea-b526-5f1040c3a07a"><span style="" class="se-fs- se-ff-   " id="SE-0cd0686f-1654-11ea-b526-57e50c957e11">클렌징폼에 이어 이번에는 오일까지 만나보게 되었는데</span></p>
+                                    <!-- } SE-TEXT -->
+                                    <!-- SE-TEXT { -->
+                                    <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-05c9179e-1654-11ea-b526-c9ed5ece02c5"><span style="" class="se-fs- se-ff-   " id="SE-0cd08f80-1654-11ea-b526-b5f65c8ea8c5">확실히 좋은 성분을 써서 그런지 민감한 제 피부에도 전혀 자극적이지 않고</span></p>
+                                    <!-- } SE-TEXT -->
+                                    <!-- SE-TEXT { -->
+                                    <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-05c9179f-1654-11ea-b526-9b41e25b20e5"><span style="" class="se-fs- se-ff-   " id="SE-0cd08f81-1654-11ea-b526-6def5354d2f1">효과까지 좋아서 계속 찾게 되는 제품이네요ㅎㅎㅎ</span></p>
+                                    <!-- } SE-TEXT -->
+                                    <!-- SE-TEXT { -->
+                                    <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-05c917a0-1654-11ea-b526-9780dfd61a32"><span style="" class="se-fs- se-ff-   " id="SE-0cd08f82-1654-11ea-b526-7b43606fd8e8">화장을 하는것도 중요하지만 지우는게 더 중요하다고 하니! </span></p>
+                                    <!-- } SE-TEXT -->
+                                    <!-- SE-TEXT { -->
+                                    <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-05c917a1-1654-11ea-b526-b3fb8a6153bb"><span style="" class="se-fs- se-ff-   " id="SE-0cd0b693-1654-11ea-b526-9d2396d3cdf9">앞으로도 꼼꼼하게 잘 사용해봐야겠어요^^</span></p>
+                                    <!-- } SE-TEXT -->
+                                    <!-- SE-TEXT { -->
+                                    <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-05c917a2-1654-11ea-b526-eb555247e7b7"><span style="" class="se-fs- se-ff-   " id="SE-0cd0b694-1654-11ea-b526-17beb6be4d80">저처럼 민감해진 피부와 블랙헤드로 어떤 클렌징이 좋을까 고민하시는 분들은</span></p>
+                                    <!-- } SE-TEXT -->
+                                    <!-- SE-TEXT { -->
+                                    <p class="se-text-paragraph se-text-paragraph-align-center " style="" id="SE-f5da399c-516d-4eab-9f23-0e28a9df9cda"><span style="" class="se-fs-fs19 se-ff-   " id="SE-0cd0b695-1654-11ea-b526-a13fcbc6e64f"><i><b>'마녀공장 퓨어 클렌징 오일'</b></i></span><span style="" class="se-fs- se-ff-   " id="SE-0cd0dda6-1654-11ea-b526-91d24ea9129c"> 한번 참고해보세요&gt;ㅁ&lt;</span></p>
+                                    <!-- } SE-TEXT -->
+                                </div>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="se-component se-sticker se-l-default" id="SE-bc537146-9339-464b-9b33-019cd5fd5ba4">
+                <div class="se-component-content">
+                    <div class="se-section se-section-sticker se-section-align-center se-l-default">
+                        <div class="se-module se-module-sticker">
+                            <a href="#" onclick="return false;" class="__se_sticker_link __se_link" data-linktype="sticker" data-linkdata="{&quot;src&quot; : &quot;https://storep-phinf.pstatic.net/pick_manager/original_36.png&quot;, &quot;packCode&quot; : &quot;pick_manager&quot;, &quot;seq&quot; : &quot;36&quot;, &quot;width&quot; : &quot;157&quot;, &quot;height&quot; : &quot;160&quot;}">
+                                <img src="https://storep-phinf.pstatic.net/pick_manager/original_36.png?type=p100_100" alt="" class="se-sticker-image">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div align="center" class="box2 card-1" style="height: 430px">
+            <a href="#" style="padding: 0px">
+                <img src="image/clean_2.jpg" id="imgnew">
+                <h3 style="color: black">퓨어 클렌징 오일</h3>
+                <h3 style="color: black">32,000원</h3>
+                <h3>구매</h3>
+            </a>
+        </div>
+
+
+    </div>
+
+
+    <style>
+        #instructions {
+            max-width: 1300px;
+            text-align: left;
+            margin: 30px auto;
+        }
+        
+        #instructions textarea {
+            width: 100%;
+            height: 100px;
+        }
+        
+        .video-js .vjs-control-bar {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+        }
+    </style>
+    </div>
+    <div align="center" style="background-color: rgba(239, 239, 239, 0.95);border: 1px solid #d4d3d3;height: 367px; min-width: 1300px;">
+        <table style="width: 1300px;padding-top: 35px" border="0">
+            <tr>
+                <td style="padding:0 30px; width: 433px;">
+                    <h2 style="letter-spacing: 2px;">고객지원센터</h2>
+                    <h3 style="font-size: 24px;  margin-bottom: 13px;">1234-5678</h3>
+                    <hr style="width:20px;height: 2px;float: left;background: black; margin:0;"><br><br>
+                    <h2>계좌안내</h2>
+                    <p id="p2">입금계좌</p>
+                    <p id="p2">한림은행 666 - 777 - 888888</p>
+                    <p id="p2">예금주: 한림대학교</p>
+                    <p id="p2">------------------------------------------</p>
+                    <p id="p2">교환/반품전용 택배비계좌</p>
+                    <p id="p2">한림은행 444444 - 55 - 66666</p>
+                    <p id="p2">예금주: 한림대학교</p>
+                </td>
+                <td style="width: 433px;">
+                    <div style="height:276px;padding:13px">
+                        <h2 style="letter-spacing: 2px;">화사정보</h2>
+                        <p id="p2">화사 : 데일리 </p>
+                        <p id="p2">대표 : 정군</p>
+                        <p id="p2">사업자번호 : [0000-33-00000]</p>
+                        <p id="p2">메일 : gooni0906@gmail.com</p>
+                        <p id="p2">주소 : 한림대학길1 한림대학교 학생생활관</p>
+                        <br>
+                        <hr style="width:20px;height: 2px;float: left;background: black; margin:0;"><br>
+                        <h2 style="letter-spacing: 2px;">배송/반품지원센터</h2>
+                        <a href="https://www.cjlogistics.com/ko/main" class="button">대한통운 택배</a>
+                    </div>
+                </td>
+                <td style="padding:0 30px;border-left:1px solid #d4d3d3;">
+                    <div style="height:268px;width: 360px; margin: 0 auto;">
+                        <div style="border-bottom: 1px solid #aaa;">
+                            <div class="notice">공지사항</div>
+                        </div>
+                        <div>
+                            <ul class="notice_2" style="padding:0;margin-top: 9px;">
+                                <li><a href="notice.html" style="margin: 0; padding:0; color:#777">· 추석연휴 휴무 안내</li>
+                                    <li><a href="notice.html" style="margin: 0; padding:0; color:#777">· 입고 자연 안내</li>
+                                    <li><a href="notice.html" style="margin: 0; padding:0; color:#777">· 8.15 휴무 안내</li>
+                                    <li><a href="notice.html" style="margin: 0; padding:0; color:#777">· 세일 안내</li>
+                                    <li><a href="notice.html" style="margin: 0; padding:0; color:#777">· 8월 여름 휴가안내</li>
+                                    <li><a href="notice.html" style="margin: 0; padding:0; color:#777">· 교환,반품 방법</li>
+                            </ul>
+                        </div>
+                    </div>
+                </td>
+
+            </tr>
+
+        </table>
+    </div>
+
+</body>
+
+</html>

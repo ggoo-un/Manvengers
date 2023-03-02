@@ -1,0 +1,11 @@
+create table cosmetics(
+id int NOT NULL auto_increment,
+category varchar(15),
+main_img varchar(20),
+sub_img varchar(20),
+name varchar(50),
+price int,
+color varchar(100),
+size varchar(100),
+primary key(id)
+);

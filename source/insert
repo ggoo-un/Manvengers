@@ -1,0 +1,1 @@
+insert into cosmetics(category,main_img,sub_img,name,price,color,size) values('skin','make_1.jpg','top_1_1.jpg','cosmetics',15000,'0','0')

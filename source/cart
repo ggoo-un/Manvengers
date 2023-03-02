@@ -1,0 +1,11 @@
+create table cart(
+userid varchar(30),
+searchTable varchar(30),
+id int,
+orderdate varchar(30),
+img varchar(50),
+name varchar(50),
+cnt int,
+price int,
+selectOption varchar(30)
+);
