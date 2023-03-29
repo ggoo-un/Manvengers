@@ -1,4 +1,4 @@
-# Manvengers: Comprehensive men's site using database (Manvengers)
+# Manvengers: Men's Comprehensive site using database (Manvengers)
 
 [![report](https://img.shields.io/badge/Report-brightgreen.svg)](./report.pdf)
 [![Video](https://img.shields.io/badge/Demo-Video-red.svg)](https://drive.google.com/file/d/1BXW2nbk9H1XQGLq5pmPWM_NvHIF-z1Dh/view?usp=share_link)
